@@ -1,0 +1,53 @@
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > cs > arXiv:1112.3644
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    Other formats
+
+( license )
+Current browse context:
+cs.SI
+< prev  |  next >
+new  | recent  | 1112
+Change to browse by:
+cs
+physics
+physics.soc-ph
+References & Citations
+
+    NASA ADS
+
+DBLP - CS Bibliography
+listing | bibtex
+C. Seshadhri
+Tamara G. Kolda
+Ali Pinar
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+Computer Science > Social and Information Networks
+Title: Community structure and scale-free collections of Erdös-Rényi graphs
+Authors: C. Seshadhri , Tamara G. Kolda , Ali Pinar
+(Submitted on 15 Dec 2011)
+
+    Abstract: Community structure plays a significant role in the analysis of social networks and similar graphs, yet this structure is little understood and not well captured by most models. We formally define a community to be a subgraph that is internally highly connected and has no deeper substructure. We use tools of combinatorics to show that any such community must contain a dense Erd\"os-R\'enyi (ER) subgraph. Based on mathematical arguments, we hypothesize that any graph with a heavy-tailed degree distribution and community structure must contain a scale free collection of dense ER subgraphs. These theoretical observations corroborate well with empirical evidence. From this, we propose the Block Two-Level Erd\"os-R\'enyi (BTER) model, and demonstrate that it accurately captures the observable properties of many real-world social networks. 
+
+Subjects: 	Social and Information Networks (cs.SI) ; Physics and Society (physics.soc-ph)
+Journal reference: 	Physical Review E 85(5):056109, 2012
+DOI : 	10.1103/PhysRevE.85.056109
+Cite as: 	arXiv:1112.3644 [cs.SI]
+  	(or arXiv:1112.3644v1 [cs.SI] for this version)
+Submission history
+From: Tamara Kolda [ view email ]
+[v1] Thu, 15 Dec 2011 20:39:20 GMT (564kb,D)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

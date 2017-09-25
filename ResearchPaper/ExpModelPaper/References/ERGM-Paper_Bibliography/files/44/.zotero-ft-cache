@@ -1,0 +1,52 @@
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > cs > arXiv:1110.4925
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    Other formats
+
+( license )
+Current browse context:
+cs.SI
+< prev  |  next >
+new  | recent  | 1110
+Change to browse by:
+cs
+References & Citations
+
+    NASA ADS
+
+DBLP - CS Bibliography
+listing | bibtex
+Ali Pinar
+C. Seshadhri
+Tamara G. Kolda
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+Computer Science > Social and Information Networks
+Title: The Similarity between Stochastic Kronecker and Chung-Lu Graph Models
+Authors: Ali Pinar , C. Seshadhri , Tamara G. Kolda
+(Submitted on 21 Oct 2011 ( v1 ), last revised 26 Oct 2011 (this version, v2))
+
+    Abstract: The analysis of massive graphs is now becoming a very important part of science and industrial research. This has led to the construction of a large variety of graph models, each with their own advantages. The Stochastic Kronecker Graph (SKG) model has been chosen by the Graph500 steering committee to create supercomputer benchmarks for graph algorithms. The major reasons for this are its easy parallelization and ability to mirror real data. Although SKG is easy to implement, there is little understanding of the properties and behavior of this model.
+    We show that the parallel variant of the edge-configuration model given by Chung and Lu (referred to as CL) is notably similar to the SKG model. The graph properties of an SKG are extremely close to those of a CL graph generated with the appropriate parameters. Indeed, the final probability matrix used by SKG is almost identical to that of a CL model. This implies that the graph distribution represented by SKG is almost the same as that given by a CL model. We also show that when it comes to fitting real data, CL performs as well as SKG based on empirical studies of graph properties. CL has the added benefit of a trivially simple fitting procedure and exactly matching the degree distribution. Our results suggest that users of the SKG model should consider the CL model because of its similar properties, simpler structure, and ability to fit a wider range of degree distributions. At the very least, CL is a good control model to compare against. 
+
+Subjects: 	Social and Information Networks (cs.SI)
+Journal reference: 	SDM12: Proceedings of the Twelfth SIAM International Conference on Data Mining, pp. 1071-1082, April 2012
+Cite as: 	arXiv:1110.4925 [cs.SI]
+  	(or arXiv:1110.4925v2 [cs.SI] for this version)
+Submission history
+From: Ali Pinar [ view email ]
+[v1] Fri, 21 Oct 2011 22:57:43 GMT (1001kb,D)
+[v2] Wed, 26 Oct 2011 18:20:50 GMT (1001kb,D)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

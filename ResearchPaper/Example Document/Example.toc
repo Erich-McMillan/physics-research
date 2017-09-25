@@ -1,0 +1,30 @@
+\contentsline {title}{\vspace {-0.75in} LaTeX, it's not just for Academia - Part 2}{1}{}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{2}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{3}{}
+\contentsline {section}{\numberline {II}LaTeX Preliminaries - Commands, Comments, and Whitespace}{3}{}
+\contentsline {section}{\numberline {III}LaTeX Document Structure}{4}{}
+\contentsline {section}{\numberline {IV}Common LaTeX Operations}{5}{}
+\contentsline {subsection}{\numberline {A}Sections}{5}{}
+\contentsline {subsection}{\numberline {B}Including Files}{5}{}
+\contentsline {subsection}{\numberline {C}Page Numbers}{5}{}
+\contentsline {subsection}{\numberline {D}Table of Contents/List of Figures/List of Tables}{6}{}
+\contentsline {subsection}{\numberline {E}Generating an Index}{6}{}
+\contentsline {subsection}{\numberline {F}BibTeX}{7}{}
+\contentsline {subsection}{\numberline {G}Footnotes}{8}{}
+\contentsline {subsection}{\numberline {H}Tables}{8}{}
+\contentsline {subsection}{\numberline {I}Figures}{8}{}
+\contentsline {subsection}{\numberline {J}Graphics}{8}{}
+\contentsline {subsection}{\numberline {K}Math}{9}{}
+\contentsline {subsection}{\numberline {L}Lists}{9}{}
+\contentsline {section}{\numberline {V}Examples}{9}{}
+\contentsline {subsection}{\numberline {A}An Article}{10}{}
+\contentsline {subsection}{\numberline {B}A Presentations}{10}{}
+\contentsline {section}{\numberline {VI}Output Formats}{10}{}
+\contentsline {subsection}{\numberline {A}Putting Your Documents on the Web}{10}{}
+\contentsline {subsection}{\numberline {B}Converting to RTF}{11}{}
+\contentsline {subsection}{\numberline {C}Converting to Text}{11}{}
+\contentsline {subsection}{\numberline {D}Converting to MS-Word}{11}{}
+\contentsline {section}{\numberline {VII}LaTeX Integration with Mac OS X Applications}{11}{}
+\contentsline {section}{\numberline {VIII}Conclusion}{11}{}

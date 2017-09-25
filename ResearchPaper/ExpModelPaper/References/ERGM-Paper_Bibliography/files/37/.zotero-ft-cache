@@ -1,0 +1,52 @@
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > physics > arXiv:1002.2975
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    PostScript
+    Other formats
+
+( license )
+Current browse context:
+physics.soc-ph
+< prev  |  next >
+new  | recent  | 1002
+Change to browse by:
+cond-mat
+cond-mat.stat-mech
+cs
+cs.DS
+physics
+References & Citations
+
+    NASA ADS
+
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+Physics > Physics and Society
+Title: Efficient and exact sampling of simple graphs with given arbitrary degree sequence
+Authors: Charo I. Del Genio , Hyunju Kim , Zoltan Toroczkai , Kevin E. Bassler
+(Submitted on 15 Feb 2010)
+
+    Abstract: Uniform sampling from graphical realizations of a given degree sequence is a fundamental component in simulation-based measurements of network observables, with applications ranging from epidemics, through social networks to Internet modeling. Existing graph sampling methods are either link-swap based (Markov-Chain Monte Carlo algorithms) or stub-matching based (the Configuration Model). Both types are ill-controlled, with typically unknown mixing times for link-swap methods and uncontrolled rejections for the Configuration Model. Here we propose an efficient, polynomial time algorithm that generates statistically independent graph samples with a given, arbitrary, degree sequence. The algorithm provides a weight associated with each sample, allowing the observable to be measured either uniformly over the graph ensemble, or, alternatively, with a desired distribution. Unlike other algorithms, this method always produces a sample, without back-tracking or rejections. Using a central limit theorem-based reasoning, we argue, that for large N, and for degree sequences admitting many realizations, the sample weights are expected to have a lognormal distribution. As examples, we apply our algorithm to generate networks with degree sequences drawn from power-law distributions and from binomial distributions. 
+
+Comments: 	8 pages, 3 figures
+Subjects: 	Physics and Society (physics.soc-ph) ; Statistical Mechanics (cond-mat.stat-mech); Data Structures and Algorithms (cs.DS)
+Journal reference: 	PLoS ONE 5(4), e10012 (2010).
+DOI : 	10.1371/journal.pone.0010012
+Cite as: 	arXiv:1002.2975 [physics.soc-ph]
+  	(or arXiv:1002.2975v1 [physics.soc-ph] for this version)
+Submission history
+From: Kevin E. Bassler [ view email ]
+[v1] Mon, 15 Feb 2010 22:54:36 GMT (158kb)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

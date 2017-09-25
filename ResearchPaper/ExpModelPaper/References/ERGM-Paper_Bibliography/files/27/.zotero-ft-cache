@@ -1,0 +1,200 @@
+skip to main content
+SciTech Connect Toggle navigation
+
+    Home
+    About SciTech
+    FAQ
+    ORCiD logo Connect your ORCID iD
+
+    Save searches, create alerts, and export data: 
+    Sign In
+    or
+    Create Account
+
+SciTech Connect
+Searching: Full Text
+Searching: Citations
+Searching: Multimedia
+Searching: Datasets
+Searching: Patents
+Searching: Software
+Searching: Everything
+Change ...
+
+    Full Text
+    Citations
+    Datasets
+    Patents
+    Multimedia
+    Software
+    Everything
+
+Electronic Full Text
+
+    Electronic Full Text
+    Citations
+    Datasets
+    Patents
+    Multimedia
+    Software
+    All Categories
+
+Search terms:
+Semantic Search
+Term Search
++ Advanced Search Adv.
+×
+Advanced Search
+All Fields:
+Semantic
+
+    Semantic
+    Term
+
+Title:
+Full Text:
+Bibliographic Data:
+Creator / Author:
+Name
+
+    Name
+    ORCID
+
+Product Type:
+Subject:
+Identifier Numbers:
+Site:
+Research Org:
+Sponsoring Org:
+Publication Date:
+    to    
+Update Date:
+    to    
+Sort:
+Close Clear All Find
+
+    SciTech Connect
+    Technical Report: An In-Depth Analysis of the Chung-Lu Model
+
+    Citation Details
+    In-Document Search
+
+Title: An In-Depth Analysis of the Chung-Lu Model
+In the classic Erd}os R enyi random graph model [5] each edge is chosen with uniform probability and the degree distribution is binomial, limiting the number of graphs that can be modeled using the Erd}os R enyi framework [10]. The Chung-Lu model [1, 2, 3] is an extension of the Erd}os R enyi model that allows for more general degree distributions. The probability of each edge is no longer uniform and is a function of a user-supplied degree sequence, which by design is the expected degree sequence of the model. This property makes it an easy model to work with theoretically and since the Chung-Lu model is a special case of a random graph model with a given degree sequence, many of its properties are well known and have been studied extensively [2, 3, 13, 8, 9]. It is also an attractive null model for many real-world networks, particularly those with power-law degree distributions and it is sometimes used as a benchmark for comparison with other graph generators despite some of its limitations [12, 11]. We know for example, that the average clustering coe cient is too low relative to most real world networks. As well, measures of a nity more » are also too low relative to most real-world networks of interest. However, despite these limitations or perhaps because of them, the Chung-Lu model provides a basis for comparing new graph models. « less
+
+Authors:
+    Winlaw, M.   [1] ; DeSterck, H.   [1] ; Sanders, G.   [1]
+    + Show Author Affiliations
+
+        Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)
+
+Publication Date:
+    2015-10-28 
+
+OSTI Identifier:
+    1239211
+
+Report Number(s):
+    LLNL--TR-678729
+
+DOE Contract Number:
+    AC52-07NA27344
+
+Resource Type:
+    Technical Report
+
+Research Org:
+    Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)
+
+Sponsoring Org:
+    USDOE
+
+Country of Publication:
+    United States
+
+Language:
+    English
+
+Subject:
+    97 MATHEMATICS AND COMPUTING 
+
+    Word Cloud
+    More Like This
+
+1000 2000 3000 4000 5000 actual aij algorithm analysis autonomous average bernoulli betweeen bound can chung comparing constraint degree depth difference draw each edge edges equation expected figure general graph however instances model models network node nodes note number original pij random relativity self system thus triangles use using
+
+    Full Text
+    preview image
+    (10.82 MB) View Full Text View Full Text
+    DOI:   10.2172/1239211
+    Select the DOI to obtain a copy of this technical report from the publisher.
+
+    Save / Share this Record
+    Citation Formats
+        MLA
+        APA
+        Chicago
+        Bibtex
+    Export Metadata
+        Endnote
+        RIS
+        Excel
+        CSV
+        XML
+    Save to My Library
+    Send to Email
+    ×
+    Send to Email
+    Email address:
+    Content:
+    Close Send
+
+×
+Cite: MLA Format
+Close
+×
+Cite: APA Format
+Close
+×
+Cite: Chicago Format
+Close
+×
+Cite: Bibtex Format
+Close
+0 pages in this document matching the terms " "
+Search For Terms:
+
+    Enter terms in the toolbar above to search the full text of this document for pages containing specific keywords.
+
+×
+Title
+Close
+Some links on this page may take you to non-federal websites. Their policies may differ from this site.
+Have feedback or questions? Let us know!
+Back to top
+Website Policies / Important Links • Site Map • Contact Us
+
+    About SciTech Connect:
+    Website Policies / Important Links
+    About
+    FAQ
+    API Documentation
+    ORCID Integration
+    Document Availability
+    Site Map
+    Contact Us
+
+    About DOE / OSTI:
+    Mission
+    DOE STI Program
+    Organization Chart
+    History
+
+    DOE Science Resources:
+    DOE PAGES
+    DOE Data Explorer
+    More DOE Collections »
+    U.S. / Global Science Resources:
+    Science.gov
+    WorldWideScience.org
+

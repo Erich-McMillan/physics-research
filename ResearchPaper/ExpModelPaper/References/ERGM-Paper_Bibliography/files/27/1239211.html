@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+
+<meta content="0.2" name="wpd_version">
+<meta content="https://www.osti.gov/scitech/biblio/1239211" name="wpd_baseurl">
+<meta content="https://www.osti.gov/scitech/biblio/1239211" name="wpd_url">
+<meta content="2017-05-27T20:45Z" name="wpd_date">
+
+		<title>An In-Depth Analysis of the Chung-Lu Model (Technical Report) | SciTech Connect</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<link rel="search" type="application/opensearchdescription+xml" href="https://www.osti.gov/scitech/res/scitechsearch.xml" title="SciTech Connect Search">
+        
+		
+		<script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript">
+
+			var _gaq = _gaq || []; 
+		</script>
+		<meta name="citation_title" content="An In-Depth Analysis of the Chung-Lu Model">
+				<meta name="citation_authors" content="Winlaw, M. ; DeSterck, H. ; Sanders, G. ">
+				<meta name="citation_date" content="2015/10/28">
+				<meta name="citation_language" content="English">
+				<meta name="citation_technical_report_number" content="LLNL--TR-678729">
+				<meta name="citation_technical_report_institution" content="Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)">
+				<meta name="citation_pdf_url" content="https://www.osti.gov/scitech/servlets/purl/1239211">
+				<meta name="citation_doi" content="10.2172/1239211">
+				<meta name="citation_keywords" content=" mathematics and computing">
+				
+				
+				
+				
+				
+				
+				<script type="text/javascript">
+
+					
+						_gaq.push(['_setCustomVar', 1, 'Product Type', 'Technical Report', 3]);
+					
+					
+				</script>
+		
+			<script type="text/javascript">
+
+				_gaq.push(['_setAccount', 'UA-18099922-2']);
+				_gaq.push(['_setDomainName', 'www.osti.gov']);
+				_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+		
+	
+<link media="all" href="1239211.css" type="text/css" rel="stylesheet">
+</head>
+<body data-baseurl="https://www.osti.gov" data-context="/scitech"><div id="MathJax_Message" style="display: none;"></div>
+
+    <div id="skiptocontent"><a href="#wrap">skip to main content</a></div>
+	
+	
+    <div id="header-nav" class="hidden-print">
+		<div class="container">
+			
+      <nav id="sub-header-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+			<a href="https://www.osti.gov/scitech/" class="visible-xs-inline-block"><img src="logo_results.png" alt="SciTech Connect" style="margin-top: 11px; margin-bottom: 9px; margin-left: 15px;" height="60"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 25px;">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="https://www.osti.gov/scitech/" style="margin-left: 0px;" title="SciTech Connect Home" id="nav-home" class="nav-button inline-button nav-bar-button">Home</a></li>
+				<li><a href="https://www.osti.gov/scitech/about" title="About SciTech Connect" id="nav-about" class="nav-button inline-button nav-bar-button">About<span class="hidden-sm"> SciTech</span></a></li>
+				<li><a href="https://www.osti.gov/scitech/faq" title="Frequently Asked Questions" id="nav-faq" class="nav-button inline-button nav-bar-button">FAQ</a></li>
+				
+					
+					
+						<li><a href="https://www.osti.gov/scitech/orcid" title="Integrate SciTech Connect with your ORCID iD to add Works" id="nav-orcid" class="nav-button inline-button nav-bar-button noauth"><img src="orcid.png" alt="ORCiD logo" class="icon-orcid" style="vertical-align: text-bottom;"> Connect your ORCID iD</a></li>
+					
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				
+					
+						<li class="hidden-xs"><span class="hidden-sm" style="display: inline-block; margin-top: 9px; font-size: 13.7px; font-weight: normal;">Save searches, create alerts, and export data:&nbsp;</span></li>
+						<li><a href="https://www.osti.gov/scitech/login" title="" id="nav-sign" class="nav-button inline-button nav-bar-button">Sign In</a></li>
+						<li class="hidden-xs"><span style="display: inline-block; margin-top: 9px; margin-left: 0px; font-size: 13.7px; font-weight: normal;">or</span></li>
+						<li><a href="https://www.osti.gov/scitech/createaccount" title="" id="nav-cre8" class="nav-button inline-button nav-bar-button" style="margin-left: 0px;">Create Account</a></li>
+					
+					
+				
+			</ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>			
+				
+		</div>
+	</div>
+	
+	
+	<!-- content -->
+	<div id="wrap">
+		<div class="container">
+	
+		
+		
+			<div class="row">
+				<div class="col-sm-5">
+                    <a href="https://www.osti.gov/scitech/"><span id="logo">SciTech Connect</span></a>
+				</div>
+				<div class="col-sm-7 hidden-print">
+					<!-- search box -->
+					<div class="restype-links visible-xs-block">
+	<a href="#" id="restype-links-F" class="btn btn-link btn-sm selected ga-click-event" data-category="Search Form" data-action="Result type selection: fulltext" data-label="fulltext" data-restype="F">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Full Text
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-C" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: citations" data-label="citations" data-restype="C">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Citations
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-FM" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: multimedia" data-label="multimedia" data-restype="FM">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Multimedia
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-FD" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: datasets" data-label="datasets" data-restype="FD">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Datasets
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-FP" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: patents" data-label="patents" data-restype="FP">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Patents
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-FS" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: software" data-label="software" data-restype="FS">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Software
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<a href="#" id="restype-links-E" class="btn btn-link btn-sm  ga-click-event" data-category="Search Form" data-action="Result type selection: everything" data-label="everything" data-restype="">
+		<span class="visible-xs-inline visible-sm-inline">Searching: </span>Everything
+		<div class="restype_arrow_container"><div class="restype_arrow"></div></div>
+	</a>
+	<div class="dropdown visible-xs-inline-block visible-sm-inline-block">
+		<a class="dropdown-toggle selected restype-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Change ... <span class="fa fa-caret-down" style="color: rgb(204, 204, 204);" aria-hidden="true"></span></a>
+		<ul class="dropdown-menu" style="min-width: 200px;">
+			<li class="small"><a class="" onclick="$('#restype-links-F').trigger('click');">Full Text</a></li>
+			<li class="small"><a class="" onclick="$('#restype-links-C').trigger('click');">Citations</a></li>
+			<li class="small"><a class="" onclick="$('#restype-links-FD').trigger('click');">Datasets</a></li>
+            <li class="small"><a class="" onclick="$('#restype-links-FP').trigger('click');">Patents</a></li>
+            <li class="small"><a class="" onclick="$('#restype-links-FM').trigger('click');">Multimedia</a></li>
+            <li class="small"><a class="" onclick="$('#restype-links-FS').trigger('click');">Software</a></li>
+            <li class="small divider"></li>
+			<li class="small"><a class="" onclick="$('#restype-links-E').trigger('click');">Everything</a></li>
+		</ul>
+	</div>		
+		
+</div>
+<div class="well well-sm search-container" style="">
+    <form action="https://www.osti.gov/scitech/search" id="index_search" class="adv_search" method="POST" autocomplete="off">
+		<input id="index_search_search" name="search" value="act" type="hidden">
+		<input id="index_search_schtype" name="schtype" value="adv" type="hidden">
+        <input id="index_search_restype" name="restype" value="F" type="hidden">
+		<input id="index_search_semtype" name="semtype" value="semantic" data-orig="semantic" type="hidden">
+        <input id="index_search_distype" name="distype" value="" data-orig="" type="hidden">
+        <input id="index_search_rows" name="rows" value="10" type="hidden">
+        <input id="index_search_page" name="page" value="" type="hidden">
+		<input id="index_search_facet" name="facet" value="" type="hidden">
+        <input id="index_search_subjectfacet" name="subjectfacet" value="" type="hidden">
+        <input id="index_search_authorfacet" name="authorfacet" value="" type="hidden">
+        <input id="index_search_doefacet" name="doefacet" value="" type="hidden">
+        <input id="index_search_clearprefs" name="clearprefs" value="" type="hidden">
+		<div class="input-group">
+			<div class="input-group-btn search-panel hidden-xs">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<span id="search_concept" style="font-size: 85%; color: rgb(102, 102, 102);">Electronic Full Text</span> <span class="caret" style="margin-left: 5px;"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="#" data-restype="F">Electronic Full Text</a></li>
+				  <li><a href="#" data-restype="C">Citations</a></li>
+				  <li><a href="#" data-restype="FD">Datasets</a></li>
+				  <li><a href="#" data-restype="FP">Patents</a></li>
+				  <li><a href="#" data-restype="FM">Multimedia</a></li>
+				  <li><a href="#" data-restype="FS">Software</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#" data-restype="">All Categories</a></li>
+				</ul>
+			</div>
+			<input name="search_param" value="all" id="search_param" type="hidden">         
+            
+			<label class="sr-only" for="searchQuery">Search terms:</label>
+			<input class="form-control copyterms" id="searchQuery" name="searchTerm" value="" placeholder="Search" type="text">
+			<span class="input-group-btn">
+                <button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
+			</span>
+		</div>
+			
+		<div class="adv_toggles">
+			<div class="adv_toggle_container on" id="semsearch_btn">
+				<a href="#" id="semsrch_toggle" class="ga-click-event" data-category="Search Form" data-action="Search type selection: Semantic" data-label="semantic" onclick="toggleSemType('sem');return false;">Semantic <span class="hidden-xs">Search </span><span class="fa fa-angle-up" style="color: rgb(170, 170, 170); padding-left: 3px; vertical-align: text-bottom;" aria-hidden="true"></span></a>
+			</div>
+			<div class="adv_toggle_container " id="trmsearch_btn">
+				<a href="#" id="trmsrch_toggle" class="ga-click-event" data-category="Search Form" data-action="Search type selection: Term" data-label="term" onclick="toggleSemType('bsc');return false;">Term <span class="hidden-xs">Search </span><span class="fa fa-angle-up" style="color: rgb(170, 170, 170); padding-left: 3px; vertical-align: text-bottom;" aria-hidden="true"></span></a>
+			</div>
+			<div id="advsearch_btn">
+				<a href="#advfilters" class="ga-click-event" data-category="Search Form" data-action="Advanced search: open" data-label="open" data-target="#advfilters" data-toggle="modal" id="adv_toggle">+ <span class="hidden-xs"> Advanced Search</span><span class="visible-xs-inline">Adv.</span></a>
+			</div>
+		</div>
+			
+		
+<div id="advfilters" class="modal" tabindex="-1" role="dialog" aria-labelledby="advfilters_label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <header id="advfilters_label">Advanced Search</header>
+			</div>
+		  <div class="modal-body" id="advsearch_body">
+									<div style="">
+
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-allfields">All Fields:</label></div>
+											<div class="adv_search-field">
+												<div class="input-group">
+													<input class="input-sm form-control adv copyterms" name="allfields" id="adv-allfields" value="" type="text">
+													<div class="input-group-btn">
+														<div class="btn-group">
+															<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100px;"><span id="adv-allfields_type-label">Semantic</span> <span class="caret"></span></button>
+															<ul class="dropdown-menu">
+																<li><a href="#" class="advtip ga-click-event" data-category="Search Form" data-action="Search type selection: Semantic" data-label="semantic" data-toggle="tooltip" data-placement="left" title="" onclick="toggleSemType('sem');" data-original-title="Semantic search employs keyword-to-concept mapping to provide rich results">Semantic</a></li>
+																<li><a href="#" class="advtip ga-click-event" data-category="Search Form" data-action="Search type selection: Term" data-label="term" data-toggle="tooltip" data-placement="left" title="" onclick="toggleSemType('bsc');" data-original-title="Term search finds exact matches for keywords and search phrases">Term</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-doctitle">Title:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="title" id="adv-doctitle" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-fulltext">Full Text:</label> </div>
+											
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="fulltext" id="adv-fulltext" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-biblio">Bibliographic Data:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="biblio" id="adv-biblio" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-creators">Creator / Author:</label> </div>
+											<div class="adv_search-field">
+												<div class="input-group">
+													<input name="creators_type" id="adv-creators_type" value="" type="hidden">
+													<input class="input-sm form-control adv" name="creators" id="adv-creators" value="" type="text">
+													<div class="input-group-btn">
+														<div class="btn-group">
+															<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" style="width: 75px;"><span id="adv-creators_type-label">Name</span> <span class="caret"></span></button>
+															<ul class="dropdown-menu">
+																<li><a href="#" onclick="$('#adv-creators_type-label').text('Name');$('#adv-creators_type').val('');return false;">Name</a></li>
+																<li><a href="#" onclick="$('#adv-creators_type-label').text('ORCID');$('#adv-creators_type').val('orcid');return false;">ORCID</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="type">Product Type:</label> </div>
+											<div class="adv_search-field">
+												<select class="input-sm form-control adv adv-input-300" id="type" name="product_type">
+													<option value="">All</option>
+													<option value="Book">Book/Monograph</option>
+													<option value="Conference">Conference/Event</option>
+													
+													<option value="Journal Article">Journal Article</option>
+													<option value="Miscellaneous">Miscellaneous</option>
+													
+													
+													<option value="Program Document">Program Document</option>
+													<option value="Software Manual">Software Manual</option>
+													<option value="Technical Report">Technical Report</option>
+													<option value="Thesis/Dissertation">Thesis/Dissertation</option>
+												</select>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-subject">Subject:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="subject" id="adv-subject" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-idnos">Identifier Numbers:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="idnos" id="adv-idnos" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-site_code">Site:</label> </div>
+											<div class="adv_search-field">
+												<select class="input-sm form-control adv adv-input-300" id="adv-site_code" name="site_code">
+													<option value="">All</option>
+													
+														<option value="AKPA">Alaska Power Administration, Juneau, Alaska (United States)</option>
+													
+														<option value="ARC">Albany Research Center (ARC), Albany, OR (United States)</option>
+													
+														<option value="ALC">Albuquerque Complex - NNSA</option>
+													
+														<option value="ALO">Albuquerque Operations Office, Albuquerque, NM (United States)</option>
+													
+														<option value="ANRCP">Amarillo National Resource Center for Plutonium, Amarillo, TX (United States)</option>
+													
+														<option value="AMERIFLUX">AmeriFlux</option>
+													
+														<option value="AMES">Ames Laboratory (AMES), Ames, IA (United States)</option>
+													
+														<option value="ANL">Argonne National Laboratory (ANL), Argonne, IL (United States)</option>
+													
+														<option value="ANL-APS">Argonne National Laboratory-Advanced Photon Source, Argonne, IL (United States)</option>
+													
+														<option value="ARO">Atlanta Regional Office, Atlanta, GA (United States)</option>
+													
+														<option value="A2EDAP">Atmosphere to Electrons (A2e) Data Archive and Portal, Pacific Northwest National Laboratory</option>
+													
+														<option value="DOEASR">Atmospheric System Research</option>
+													
+														<option value="BPO">Bartlesville Project Office, OK (United States)</option>
+													
+														<option value="BMI">Battelle Memorial Institute (United States)</option>
+													
+														<option value="BHI">Bechtel Hanford Inc. (BHI), Richland, WA (United States)</option>
+													
+														<option value="BNI">Bechtel National Inc., Richland, WA (United States)</option>
+													
+														<option value="BNC">Bechtel Nevada Corporation (BNC) (United States)</option>
+													
+														<option value="BAPL">Bettis Atomic Power Laboratory (BAPL), West Mifflin, PA (United States)</option>
+													
+														<option value="BPA">Bonneville Power Administration (BPA), Portland, OR (United States)</option>
+													
+														<option value="BRO">Boston Regional Office, Boston, MA (United States)</option>
+													
+														<option value="BNL">Brookhaven National Laboratory (BNL), Upton, NY (United States)</option>
+													
+														<option value="CBFO">Carlsbad Field Office (United States)</option>
+													
+														<option value="CHO">Chicago Operations Office, Argonne, IL (United States)</option>
+													
+														<option value="CRO">Chicago Regional Office, Chicago, IL (United States)</option>
+													
+														<option value="CRBRP">Clinch River Breeder Reactor Project, Oak Ridge, TN (United States)</option>
+													
+														<option value="DOEHS-63">DOE HSS Office of Classification, Office of Document Reviews</option>
+													
+														<option value="DOEARM">DOE Office of Science Atmospheric Radiation Measurement (ARM) Program (United States)</option>
+													
+														<option value="DOEEI">DOEEI USDOE Energy Information Administration (EIA)</option>
+													
+														<option value="DSO">Dallas Support Office, Dallas, TX (United States)</option>
+													
+														<option value="DRO">Denver Regional Office, Golden, CO (United States)</option>
+													
+														<option value="DOENE34">Department of Energy's (DOE) Nuclear Energy (NE) Radioisotope Power Systems (RPS) Program</option>
+													
+														<option value="DRINU">Desert Research Institute, Nevada University, Reno, NV (United States)</option>
+													
+														<option value="EE-LIBRARY">EERE Publication and Product Library</option>
+													
+														<option value="ETTP">East Tennessee Technology Park (ETTP), Oak Ridge, TN (United States)</option>
+													
+														<option value="EFRC">Energy Frontier Research Centers</option>
+													
+														<option value="ETEC">Energy Technology Engineering Center (ETEC), Canoga Park, CA (United States)</option>
+													
+														<option value="EML">Environmental Measurements Laboratory (EML), New York, NY (United States)</option>
+													
+														<option value="FETC">Federal Energy Technology Center (FETC), Morgantown, WV, and Pittsburgh, PA (United States)</option>
+													
+														<option value="FNAL">Fermi National Accelerator  Laboratory (FNAL), Batavia, IL (United States)</option>
+													
+														<option value="FAO">Fernald Area Office (United States)</option>
+													
+														<option value="FEMP">Fernald Environmental Management Project, OH (United States)</option>
+													
+														<option value="FLUXNET">FluxNet</option>
+													
+														<option value="GA">General Atomics Site, San Diego, CA (United States)</option>
+													
+														<option value="GE">General Electric Company</option>
+													
+														<option value="GFO">Golden Field Office, Golden, CO (United States)</option>
+													
+														<option value="GFETC">Grand Forks Energy Technology Center (United States)</option>
+													
+														<option value="GJO">Grand Junction Project Office, Grand Junction, CO (United States)</option>
+													
+														<option value="DOEHS-90">HSS Office of Classification</option>
+													
+														<option value="HNF">Hanford Site (HNF), Richland, WA (United States)</option>
+													
+														<option value="ICPP">Idaho Chemical Processing Plant, Idaho Falls, ID (United States)</option>
+													
+														<option value="INEL">Idaho National Engineering Laboratory, Idaho Falls, ID (United States)</option>
+													
+														<option value="INEEL">Idaho National Engineering and Environmental Laboratory, Idaho Falls, ID (United States)</option>
+													
+														<option value="INLICP">Idaho National Laboratory - Idaho Cleanup Project (United States)</option>
+													
+														<option value="INLSMP">Idaho National Laboratory Specific Manufacturing Plant</option>
+													
+														<option value="INL">Idaho National Laboratory, Idaho Falls, ID (United States)</option>
+													
+														<option value="IDO">Idaho Operations Office, Idaho Falls, ID (United States)</option>
+													
+														<option value="ITRI">Inhalation Toxicology Research Institute (ITRI), Albuquerque, NM (United States)</option>
+													
+														<option value="ISCN">International Soil Carbon Network (ISCN)</option>
+													
+														<option value="ITLV">International Technologies Corporation, Las Vegas, NV (United States)</option>
+													
+														<option value="KCAO">Kansas City Area Office, Kansas City, MO (United States)</option>
+													
+														<option value="KCP">Kansas City Plant (KCP), Kansas City, MO (United States)</option>
+													
+														<option value="KCSO">Kansas City Support Office (United States)</option>
+													
+														<option value="KAPL">Knolls Atomic Power Laboratory (KAPL), Niskayuna, NY (United States)</option>
+													
+														<option value="LBNL-MP">LBNL Materials Project</option>
+													
+														<option value="LETC">Laramie Energy Technology Center (United States)</option>
+													
+														<option value="LBNL">Lawrence Berkeley National Laboratory (LBNL), Berkeley, CA (United States)</option>
+													
+														<option value="LLNL">Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)</option>
+													
+														<option value="LSO">Livermore Site Office</option>
+													
+														<option value="LANL">Los Alamos National Laboratory (LANL), Los Alamos, NM (United States)</option>
+													
+														<option value="LASO">Los Alamos Site Office, NM (United States)</option>
+													
+														<option value="DOE-MHKDR">Marine and Hydrokinetic Data Repository (MHKDR)</option>
+													
+														<option value="METC">Morgantown Energy Technology Center, Morgantown, WV (United States)</option>
+													
+														<option value="MAO">Mound Area Office, Miamisburg, OH (United States)</option>
+													
+														<option value="MOUND">Mound Plant, Miamisburg, OH (United States)</option>
+													
+														<option value="DOENE75">NE-75, USDOE Office of Space and Defense Power Systems</option>
+													
+														<option value="NNSA-KCSO">NNSA Kansas City Site Office (United States)</option>
+													
+														<option value="NETL-EDX">National Energy Technology Laboratory - Energy Data eXchange</option>
+													
+														<option value="NETL-IR">National Energy Technology Laboratory - In-house Research</option>
+													
+														<option value="NETL">National Energy Technology Laboratory, Pittsburgh, PA, and Morgantown, WV (United States)</option>
+													
+														<option value="NIPER">National Institute for Petroleum and Energy Research, Bartlesville, OK (United States)</option>
+													
+														<option value="NNSA">National Nuclear Security Administration</option>
+													
+														<option value="NNSASC">National Nuclear Security Agency Service Center (United States)</option>
+													
+														<option value="NPTO">National Petroleum Technology Office (NPTO), Tulsa, OK (United States)</option>
+													
+														<option value="NREL">National Renewable Energy Laboratory (NREL), Golden, CO (United States)</option>
+													
+														<option value="NPOSR">Naval Petroleum and Oil Shale Reserves (United States)</option>
+													
+														<option value="NAVARRO">Navarro</option>
+													
+														<option value="NNES">Navarro Nevada Environmental Services</option>
+													
+														<option value="NVO">Nevada Field Office, Las Vegas, NV (United States)</option>
+													
+														<option value="NTA">Nevada Nuclear Testing Archive</option>
+													
+														<option value="NTS">Nevada Test Site (NTS), Mercury, NV (United States)</option>
+													
+														<option value="NSTEC">Nevada Test Site/National Security Technologies, LLC (United States)</option>
+													
+														<option value="N-I">Nevada Test Site/Navarro-Intera, LLC</option>
+													
+														<option value="NBL">New Brunswick Laboratory (NBL), Argonne, IL (United States)</option>
+													
+														<option value="NYSO">New York Support Office, New York, NY (United States)</option>
+													
+														<option value="NAA">North American Aviation, Inc.</option>
+													
+														<option value="NLVF">North Las Vegas Facility, North Las Vegas, NV (United States)</option>
+													
+														<option value="ORGDP">Oak Ridge Gaseous Diffusion Plant (K-25), Oak Ridge, TN (United States)</option>
+													
+														<option value="ORISE">Oak Ridge Institute for Science and Education (ORISE), Oak Ridge, TN (United States)</option>
+													
+														<option value="ORNL">Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)</option>
+													
+														<option value="ORO">Oak Ridge Office, Oak Ridge, TN (United States)</option>
+													
+														<option value="Y-12">Oak Ridge Y-12 Plant (Y-12), Oak Ridge, TN (United States)</option>
+													
+														<option value="OAK">Oakland Operations Office, Oakland, CA (United States)</option>
+													
+														<option value="DOEOED">Office of Economic Impact and Diversity</option>
+													
+														<option value="EMCBC">Office of Environmental Management-Consolidated Business Center</option>
+													
+														<option value="DOEEM32">Office of Groundwater and Soil Remediation</option>
+													
+														<option value="NNDC">Office of Nonproliferation and National Security,  Office of Declass (United States)</option>
+													
+														<option value="NA22">Office of Nonproliferation and Verification Research and Development (NA-22)</option>
+													
+														<option value="ORP">Office of River Protection (United States)</option>
+													
+														<option value="DOEAB">Office of the Secretary of Energy Advisory Board (AB) (United States)</option>
+													
+														<option value="OHFO">Ohio Field Office, Miamisburg, OH (United States)</option>
+													
+														<option value="PNNL-MSDP">PNNL Microscopy Data Portal</option>
+													
+														<option value="PNNL">Pacific Northwest National Laboratory (PNNL), Richland, WA (United States)</option>
+													
+														<option value="PADGDP">Paducah Gaseous Diffusion Plant, Paducah, KY (United States)</option>
+													
+														<option value="PTX">Pantex Plant (PTX), Amarillo, TX (United States)</option>
+													
+														<option value="PORO">Pertoleum Oil Reserves Office</option>
+													
+														<option value="PRO">Philadelphia Regional Office, Philadelphia, PA (United States)</option>
+													
+														<option value="PAO">Pinellas Area Office (United States)</option>
+													
+														<option value="PNLSP">Pinellas Plant, Largo, FL (United States)</option>
+													
+														<option value="PETC">Pittsburgh Energy Technology Center, Pittsburgh, PA (United States)</option>
+													
+														<option value="PNRO">Pittsburgh Naval Reactors Office, West Mifflin, PA (United States)</option>
+													
+														<option value="PORTGDP">Portsmouth Gaseous Diffusion Plant, Piketon, OH (United States)</option>
+													
+														<option value="PORTPO">Portsmouth Project Office, OH (United States)</option>
+													
+														<option value="PW">Pratt and Whitney Aircraft (United States)</option>
+													
+														<option value="PPPL">Princeton Plasma Physics Laboratory (PPPL), Princeton, NJ (United States)</option>
+													
+														<option value="RLO">Richland Operations Office, Richland, WA (United States)</option>
+													
+														<option value="RSO">Richland Support Office (United States)</option>
+													
+														<option value="RFP">Rocky Flats Environmental Technology Site (RFP), Golden, CO (United States)</option>
+													
+														<option value="RFETS">Rocky Flats Environmental Technology Site, Golden, CO (United States)</option>
+													
+														<option value="RFFO">Rocky Flats Field Office, Golden, CO (United States)</option>
+													
+														<option value="RMOTC">Rocky Mountain Oilfield Testing Center, Casper, WY (United States)</option>
+													
+														<option value="SMS">S. M. Stoller (United States)</option>
+													
+														<option value="SLAC">SLAC National Accelerator Laboratory (SLAC), Menlo Park, CA (United States)</option>
+													
+														<option value="STIS">STI Submitter (STIS), Anywhere (United States)</option>
+													
+														<option value="SRPO">Salt Repository Project Office (United States)</option>
+													
+														<option value="SFSO">San Francisco Support Office, Oakland, CA (United States)</option>
+													
+														<option value="SNL">Sandia National Laboratories (SNL), Albuquerque, NM, and Livermore, CA (United States)</option>
+													
+														<option value="SNL-A">Sandia National Laboratories, Albuquerque, NM (United States)</option>
+													
+														<option value="SNL-L">Sandia National Laboratories, Livermore, CA (United States)</option>
+													
+														<option value="SSO">Sandia Site Office</option>
+													
+														<option value="SRELA">Savannah River Ecology Laboratory (SREL), Aiken, SC (United States)</option>
+													
+														<option value="SRNL">Savannah River National Laboratory (formerly SRTC) (United States)</option>
+													
+														<option value="SRO">Savannah River Operations Office, Aiken, SC (United States)</option>
+													
+														<option value="SRS">Savannah River Site (SRS), Aiken, SC (United States)</option>
+													
+														<option value="SRSO">Savannah River Site Office</option>
+													
+														<option value="SNRO">Schenectady Naval Reactors Office, Schenectady, NY (United States)</option>
+													
+														<option value="SEARO">Seattle Regional Office (United States)</option>
+													
+														<option value="SHAW">Shaw Environmental, Inc. (United States)</option>
+													
+														<option value="SEPA">Southeastern Power Administration, Elberton, GA (United States)</option>
+													
+														<option value="SWPA">Southwestern Power Administration, Tulsa, OK (United States)</option>
+													
+														<option value="S-N">Stoller-Navarro Joint Venture (United States)</option>
+													
+														<option value="SPRPO">Strategic Petroleum Reserve Office, New Orleans, LA (United States)</option>
+													
+														<option value="SSCPO">Superconducting Super Collider Project Office (United States)</option>
+													
+														<option value="TJNAF">Thomas Jefferson National Accelerator Facility, Newport News, VA (United States)</option>
+													
+														<option value="NE75-ORB">US Department of Energy, NE-75, Orbital Fairchild</option>
+													
+														<option value="DOELM">US Department of Energy/Office of Legacy Management</option>
+													
+														<option value="ARPA-E">USDOE Advanced Research Projects Agency - Energy (ARPA-E)</option>
+													
+														<option value="DOEEIA">USDOE Energy Information Administration (EI) (United States)</option>
+													
+														<option value="DOENA">USDOE National Nuclear Security Administration (NNSA) (United States)</option>
+													
+														<option value="DOECR">USDOE Office of Chief Financial Officer (CR) (United States)</option>
+													
+														<option value="DOERW">USDOE Office of Civilian Radioactive Waste Management (RW) (United States)</option>
+													
+														<option value="DOECN">USDOE Office of Counterintelligence (United States)</option>
+													
+														<option value="DOEDP">USDOE Office of Defense Programs (DP) (United States)</option>
+													
+														<option value="DOEEH62">USDOE Office of ES&amp;H, Office of Epidemiologic Studies (United States)</option>
+													
+														<option value="DOEEH42">USDOE Office of ES&amp;H, Office of National Environmental Policy Act (United States)</option>
+													
+														<option value="DOEED">USDOE Office of Economic Impact and Diversity (ED) (United States)</option>
+													
+														<option value="DOEOE">USDOE Office of Electricity Delivery and Energy Reliability (OE) (United States)</option>
+													
+														<option value="DOEEE">USDOE Office of Energy Efficiency and Renewable Energy (EE) (United States)</option>
+													
+														<option value="DOEEEGTP">USDOE Office of Energy Efficiency and Renewable Energy Geothermal Tech Pgm (United States)</option>
+													
+														<option value="DOEER">USDOE Office of Energy Research (ER) (United States)</option>
+													
+														<option value="EHSS">USDOE Office of Environment, Health, Safety and Security (AU)</option>
+													
+														<option value="DOEEH">USDOE Office of Environment, Safety and Health (EH) (United States)</option>
+													
+														<option value="DOEEM">USDOE Office of Environmental Management (EM) (United States)</option>
+													
+														<option value="DOEEMSP">USDOE Office of Environmental Management Science Program (United States)</option>
+													
+														<option value="DOEFM">USDOE Office of Field Management (FM) (United States)</option>
+													
+														<option value="DOEMD">USDOE Office of Fissile Materials Disposition (MD) (United States)</option>
+													
+														<option value="DOEFE">USDOE Office of Fossil Energy (FE) (United States)</option>
+													
+														<option value="DOEHG">USDOE Office of Hearings and Appeals (HG) (United States)</option>
+													
+														<option value="DOEHR">USDOE Office of Human Resources and Administration (HR) (United States)</option>
+													
+														<option value="DOEIE">USDOE Office of Indian Energy Policy and Programs (IE) (United States)</option>
+													
+														<option value="DOEIN">USDOE Office of Intelligence and Counterintelligence (IN) (United States)</option>
+													
+														<option value="DOEIA">USDOE Office of International Affairs (IA) (United States)</option>
+													
+														<option value="DOEMA">USDOE Office of Management and Administration (United States)</option>
+													
+														<option value="DOENN">USDOE Office of Nonproliferation and National Security (NN) (United States)</option>
+													
+														<option value="NA222">USDOE Office of Nuclear Detonation Detection (United States)</option>
+													
+														<option value="DOENE">USDOE Office of Nuclear Energy, Science and Technology (NE) (United States)</option>
+													
+														<option value="DOEPO">USDOE Office of Policy and International Affairs  (PO) (United States)</option>
+													
+														<option value="DOEPA">USDOE Office of Public Affairs (PA) (United States)</option>
+													
+														<option value="DOESC">USDOE Office of Science (SC) (United States)</option>
+													
+														<option value="DOEWT">USDOE Office of Worker and Community Transition (WT) (United States)</option>
+													
+														<option value="DOEGC">USDOE Office of the General Counsel (GC) (United States)</option>
+													
+														<option value="DOEIG">USDOE Office of the Inspector General (IG) (United States)</option>
+													
+														<option value="DOES">USDOE Office of the Secretary of Energy (United States)</option>
+													
+														<option value="CSB">USE CAO   Carlsbad Area Office, Carlsbad, NM (United States)</option>
+													
+														<option value="YMSCPO">USE YMP   Yucca Mountain Site Characterization Office, Las Vegas, NV (United States)</option>
+													
+														<option value="YMS">USE YMP Yucca Mountain Site, Las Vegas, Nevada (United States)</option>
+													
+														<option value="CAO">Use CBFO - Carlsbad Area Office, Carlsbad, NM (United States)</option>
+													
+														<option value="SRTC">Use SRNL  -  Savannah River Technology Center (SRTC), Aiken, SC (United States)</option>
+													
+														<option value="WCH">Washington Closure Hanford (United States)</option>
+													
+														<option value="HQPR">Washington Procurement Operations Office, Washington, DC (United States)</option>
+													
+														<option value="WIPP">Waste Isolation Pilot Plant (WIPP), Carlsbad, NM (United States)</option>
+													
+														<option value="WSSRAP">Weldon Spring Site Remedial Action Project, MO (United States)</option>
+													
+														<option value="WVDP">West Valley Demonstration Project, West Valley, NY (United States)</option>
+													
+														<option value="WAPA">Western Area Power Administration, Golden, CO (United States)</option>
+													
+														<option value="YMP">Yucca Mountain Project, Las Vegas, Nevada (United States)</option>
+													
+														<option value="ORD">Yucca Mountain Project/Office of Repository Development (United States)</option>
+													
+												</select>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-research_org">Research Org:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="research_org" id="adv-research_org" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-sponsor_org">Sponsoring Org:</label> </div>
+											<div class="adv_search-field">
+												<input class="input-sm form-control adv adv-input-300" name="sponsor_org" id="adv-sponsor_org" value="" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-pubd_from">Publication Date:</label> </div>
+                                            <div class="adv_search-field">
+                                                <input id="adv-pubd_from" name="pubd_from" data-toggle="tooltip" data-placement="bottom" title="" class="input-sm form-control adv adv-input-150 dateinput" value="" placeholder="MM/DD/YYYY" data-original-title="Enter date in MM/DD/YYYY format" type="text">
+												&nbsp;&nbsp;&nbsp; <label for="adv-pubd_until">to</label> &nbsp;&nbsp;&nbsp;
+                                                <input id="adv-pubd_until" name="pubd_until" data-toggle="tooltip" data-placement="bottom" title="" class="input-sm form-control adv adv-input-150 dateinput" value="" placeholder="MM/DD/YYYY" data-original-title="Enter date in MM/DD/YYYY format" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row odd">
+											<div class="adv_search-label"><label for="adv-updd_from">Update Date:</label> </div>
+                                            <div class="adv_search-field">
+                                                <input id="adv-updd_from" name="updd_from" data-toggle="tooltip" data-placement="bottom" title="" class="input-sm form-control adv adv-input-150 dateinput" value="" placeholder="MM/DD/YYYY" data-original-title="Enter date in MM/DD/YYYY format" type="text">
+												&nbsp;&nbsp;&nbsp; <label for="adv-updd_until">to</label> &nbsp;&nbsp;&nbsp;
+                                                <input id="adv-updd_until" name="updd_until" data-toggle="tooltip" data-placement="bottom" title="" class="input-sm form-control adv adv-input-150 dateinput" value="" placeholder="MM/DD/YYYY" data-original-title="Enter date in MM/DD/YYYY format" type="text">
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										<div class="adv_search-row">
+											<div class="adv_search-label"><label for="adv-sort">Sort:</label> </div>
+											<div class="adv_search-field">
+												<select class="input-sm form-control adv adv-input-300" id="adv-sort" name="sort">
+													
+														
+															<option value="score desc">Relevance (highest to lowest)</option>
+															<option value="publication_date desc">Publication Date (newest to oldest)</option>
+															<option value="publication_date asc">Publication Date (oldest to newest)</option>
+															<option value="metrics_total_citations desc">Most Cited</option>
+														
+														
+													
+												</select>
+												<div style="clear: both;"></div>
+											</div>
+										</div>
+										
+										
+									</div>
+		  </div>
+		  <div class="modal-footer">
+				<input id="adv-is_clear" name="is_clear" value="" data-orig="" type="hidden">
+				<button class="btn btn-sm btn-default pull-left" data-dismiss="modal" aria-hidden="true">Close</button>
+				<button class="btn btn-sm btn-default" onclick="clearAdv();return false;">Clear All</button>
+				<button class="btn btn-sm btn-default col-md-2 pull-right" aria-hidden="true" type="submit" id="advfilters_submit"><span class="fa fa-search"></span> Find</button>
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+
+	</form>
+</div>
+					<!-- /search box -->
+				</div>
+			</div>
+		
+		
+		
+
+		<div id="content">
+
+			
+				<ul class="breadcrumb biblio-page hidden-print">
+				<li><small><a class="left" href="https://www.osti.gov/scitech/">SciTech<span class="hidden-xs"> Connect</span></a></small></li>
+				
+				<li class="active"><small><span id="bc-pageno">Technical Report: <em>An In-Depth Analysis of the Chung-Lu Model</em></span></small></li>
+				</ul>
+			
+
+
+		<div itemscope="" itemtype="http://schema.org/TechArticle" class="biblio-page" data-ostiid="1239211" data-doi="10.2172/1239211" data-type="">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading">
+					<div class="padding">
+						<div class="pull-right hidden-print" style="line-height: 30px;">
+							<ul class="nav nav-tabs" style="margin-bottom: 0px; position: absolute; bottom: -1px; right: 15px;">
+								<li class="active"><a href="#tab-citation-details" id="tab-toggle-details" data-toggle="tab"><small>Citation Details</small></a></li>
+								
+									
+										
+											<li><a href="#tab-citation-search" id="tab-toggle-search" data-toggle="tab"><small>In-Document Search</small></a></li>
+										
+										
+										
+									
+								
+							</ul>
+						</div>
+                        
+						<h1 class="lead" id="citation-pagetitle">
+                            <span style="font-weight: normal; display: none;">Title: </span><span itemprop="name">An In-Depth Analysis of the Chung-Lu Model</span>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-content" style="overflow: visible;">
+			<div class="tab-pane active" id="tab-citation-details">
+
+				
+
+				<div class="row">
+					<div class="col-lg-9">
+                        
+                        
+						<div id="citation-details">
+							
+							<div id="citation-meta" class="hidden-print">
+								
+								<div class="biblio-detail">
+	<span class="description" itemprop="description">
+
+            In the classic Erd}os R enyi random graph model [5] each edge is chosen with uniform probability and the degree distribution is binomial, limiting the number of graphs that can be modeled using the Erd}os R enyi framework [10]. The Chung-Lu model [1, 2, 3] is an extension of the Erd}os R enyi model that allows for more general degree distributions. The probability of each edge is no longer uniform and is a function of a user-supplied degree sequence, which by design is the expected degree sequence of the model. This property makes it an easy model to work with theoretically and since the Chung-Lu model is a special case of a random graph model with a given degree sequence, many of its properties are well known and have been studied extensively [2, 3, 13, 8, 9]. It is also an attractive null model for many real-world networks, particularly those with power-law degree distributions and it is sometimes used as a benchmark for comparison with other graph generators despite some of its limitations [12, 11]. We know for example, that the average clustering coe cient is too low relative to most real world networks. As well, measures of a nity<a href="#" onclick="$(this).hide().next().show().next().show();return false;" style="margin-left:10px;">more&nbsp;»</a><span style="display: none;"> are also too low relative to most real-world networks of interest. However, despite these limitations or perhaps because of them, the Chung-Lu model provides a basis for comparing new graph models.</span><a href="#" onclick="$(this).hide().prev().hide().prev().show();return false;" style="margin-left:10px;display:none;">«&nbsp;less</a></span>
+		<div style="clear: both; margin-bottom: 20px;"></div>
+	<dl class="dl-horizontal small">
+		<dt>Authors:</dt><dd>
+			<a href="https://www.osti.gov/scitech/search/author:%22Winlaw,%20M.%22"><span class="author" itemprop="author">Winlaw, M.</span>&nbsp;<sup class="text-muted">[1]</sup></a>
+	<span class="sep">; </span><a href="https://www.osti.gov/scitech/search/author:%22DeSterck,%20H.%22"><span class="author" itemprop="author">DeSterck, H.</span>&nbsp;<sup class="text-muted">[1]</sup></a>
+	<span class="sep">; </span><a href="https://www.osti.gov/scitech/search/author:%22Sanders,%20G.%22"><span class="author" itemprop="author">Sanders, G.</span>&nbsp;<sup class="text-muted">[1]</sup></a>
+	<hr style="margin-top: 8px; margin-bottom: 8px;">
+	<div class="affiliation_toggle hidden-print"><a href="https://www.osti.gov/scitech/biblio/.affiliation_list">+ Show Author Affiliations</a></div>
+	<ol class="affiliation_list visible-print" style="padding-left: 15px;">
+		<li>Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)</li>
+		</ol>
+</dd>
+		</dl>
+	<dl class="dl-horizontal small"><dt>Publication Date:</dt><dd><time itemprop="datePublished" datetime="2015-10-28">2015-10-28</time></dd></dl>
+	<dl class="dl-horizontal small"><dt>OSTI Identifier:</dt><dd>1239211</dd></dl>
+	<dl class="dl-horizontal small"><dt>Report Number(s):</dt><dd>LLNL--TR-678729</dd></dl>
+	<dl class="dl-horizontal small"><dt>DOE Contract Number:</dt><dd>AC52-07NA27344</dd></dl>
+	<dl class="dl-horizontal small"><dt>Resource Type:</dt><dd>Technical Report</dd></dl>
+			<dl class="dl-horizontal small"><dt>Research Org:</dt><dd itemprop="sourceOrganization">Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)</dd></dl>
+	<dl class="dl-horizontal small"><dt>Sponsoring Org:</dt><dd itemprop="sourceOrganization">USDOE</dd></dl>
+	<dl class="dl-horizontal small"><dt>Country of Publication:</dt><dd>United States</dd></dl>
+	<dl class="dl-horizontal small"><dt>Language:</dt><dd itemprop="inLanguage">English</dd></dl>
+	<dl class="dl-horizontal small"><dt>Subject:</dt><dd>
+			<span class="subject" itemprop="about">97 MATHEMATICS AND COMPUTING</span></dd></dl>
+	<div class="clearfix"></div>
+</div>
+
+								<div id="citation-addl" class="hidden-print" data-doload="1" style="display: block;">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab-wc" data-toggle="tab"><small>Word Cloud</small></a></li>
+										<li><a id="tab-mlt-tab" href="#tab-mlt" data-toggle="tab"><small>More Like This</small></a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab-wc"><div class="my-new-list padding"> <a href="https://www.osti.gov/scitech/search/term:1000"><span style="font-size: 0.9em; color: rgb(134, 33, 131);">1000</span></a>  <a href="https://www.osti.gov/scitech/search/term:2000"><span style="font-size: 0.9em; color: rgb(89, 12, 127);">2000</span></a>  <a href="https://www.osti.gov/scitech/search/term:3000"><span style="font-size: 0.9em; color: rgb(85, 97, 58);">3000</span></a>  <a href="https://www.osti.gov/scitech/search/term:4000"><span style="font-size: 0.9em; color: rgb(65, 0, 34);">4000</span></a>  <a href="https://www.osti.gov/scitech/search/term:5000"><span style="font-size: 0.9em; color: rgb(71, 30, 60);">5000</span></a>  <a href="https://www.osti.gov/scitech/search/term:actual"><span style="font-size: 0.9em; color: rgb(141, 43, 138);">actual</span></a>  <a href="https://www.osti.gov/scitech/search/term:aij"><span style="font-size: 0.9em; color: rgb(125, 87, 15);">aij</span></a>  <a href="https://www.osti.gov/scitech/search/term:algorithm"><span style="font-size: 0.9em; color: rgb(13, 140, 100);">algorithm</span></a>  <a href="https://www.osti.gov/scitech/search/term:analysis"><span style="font-size: 0.9em; color: rgb(111, 37, 65);">analysis</span></a>  <a href="https://www.osti.gov/scitech/search/term:autonomous"><span style="font-size: 0.9em; color: rgb(60, 39, 94);">autonomous</span></a>  <a href="https://www.osti.gov/scitech/search/term:average"><span style="font-size: 0.9em; color: rgb(70, 28, 34);">average</span></a>  <a href="https://www.osti.gov/scitech/search/term:bernoulli"><span style="font-size: 0.9em; color: rgb(69, 137, 24);">bernoulli</span></a>  <a href="https://www.osti.gov/scitech/search/term:betweeen"><span style="font-size: 0.9em; color: rgb(7, 4, 21);">betweeen</span></a>  <a href="https://www.osti.gov/scitech/search/term:bound"><span style="font-size: 0.9em; color: rgb(25, 43, 149);">bound</span></a>  <a href="https://www.osti.gov/scitech/search/term:can"><span style="font-size: 0.9em; color: rgb(67, 90, 121);">can</span></a>  <a href="https://www.osti.gov/scitech/search/term:chung"><span style="font-size: 0.9em; color: rgb(27, 18, 149);">chung</span></a>  <a href="https://www.osti.gov/scitech/search/term:comparing"><span style="font-size: 0.9em; color: rgb(44, 101, 87);">comparing</span></a>  <a href="https://www.osti.gov/scitech/search/term:constraint"><span style="font-size: 0.9em; color: rgb(1, 43, 124);">constraint</span></a>  <a href="https://www.osti.gov/scitech/search/term:degree"><span style="font-size: 1.44em; color: rgb(139, 52, 21);">degree</span></a>  <a href="https://www.osti.gov/scitech/search/term:depth"><span style="font-size: 0.9em; color: rgb(121, 47, 116);">depth</span></a>  <a href="https://www.osti.gov/scitech/search/term:difference"><span style="font-size: 0.9em; color: rgb(129, 30, 37);">difference</span></a>  <a href="https://www.osti.gov/scitech/search/term:draw"><span style="font-size: 0.9em; color: rgb(53, 69, 136);">draw</span></a>  <a href="https://www.osti.gov/scitech/search/term:each"><span style="font-size: 0.9em; color: rgb(67, 103, 133);">each</span></a>  <a href="https://www.osti.gov/scitech/search/term:edge"><span style="font-size: 0.9em; color: rgb(136, 128, 108);">edge</span></a>  <a href="https://www.osti.gov/scitech/search/term:edges"><span style="font-size: 0.9em; color: rgb(19, 73, 66);">edges</span></a>  <a href="https://www.osti.gov/scitech/search/term:equation"><span style="font-size: 0.9em; color: rgb(84, 138, 72);">equation</span></a>  <a href="https://www.osti.gov/scitech/search/term:expected"><span style="font-size: 1.1476em; color: rgb(44, 129, 145);">expected</span></a>  <a href="https://www.osti.gov/scitech/search/term:figure"><span style="font-size: 0.9em; color: rgb(15, 13, 115);">figure</span></a>  <a href="https://www.osti.gov/scitech/search/term:general"><span style="font-size: 0.9em; color: rgb(28, 78, 1);">general</span></a>  <a href="https://www.osti.gov/scitech/search/term:graph"><span style="font-size: 0.9em; color: rgb(48, 90, 26);">graph</span></a>  <a href="https://www.osti.gov/scitech/search/term:however"><span style="font-size: 0.9em; color: rgb(57, 28, 27);">however</span></a>  <a href="https://www.osti.gov/scitech/search/term:instances"><span style="font-size: 0.9em; color: rgb(82, 124, 124);">instances</span></a>  <a href="https://www.osti.gov/scitech/search/term:model"><span style="font-size: 1.37555em; color: rgb(119, 109, 38);">model</span></a>  <a href="https://www.osti.gov/scitech/search/term:models"><span style="font-size: 0.9em; color: rgb(49, 87, 139);">models</span></a>  <a href="https://www.osti.gov/scitech/search/term:network"><span style="font-size: 0.9em; color: rgb(19, 19, 52);">network</span></a>  <a href="https://www.osti.gov/scitech/search/term:node"><span style="font-size: 0.9em; color: rgb(37, 93, 91);">node</span></a>  <a href="https://www.osti.gov/scitech/search/term:nodes"><span style="font-size: 0.9em; color: rgb(39, 123, 126);">nodes</span></a>  <a href="https://www.osti.gov/scitech/search/term:note"><span style="font-size: 0.9em; color: rgb(133, 142, 105);">note</span></a>  <a href="https://www.osti.gov/scitech/search/term:number"><span style="font-size: 0.9em; color: rgb(21, 86, 29);">number</span></a>  <a href="https://www.osti.gov/scitech/search/term:original"><span style="font-size: 0.9em; color: rgb(89, 14, 111);">original</span></a>  <a href="https://www.osti.gov/scitech/search/term:pij"><span style="font-size: 0.9em; color: rgb(112, 42, 116);">pij</span></a>  <a href="https://www.osti.gov/scitech/search/term:random"><span style="font-size: 0.9em; color: rgb(119, 137, 29);">random</span></a>  <a href="https://www.osti.gov/scitech/search/term:relativity"><span style="font-size: 0.9em; color: rgb(119, 138, 127);">relativity</span></a>  <a href="https://www.osti.gov/scitech/search/term:self"><span style="font-size: 0.9em; color: rgb(102, 102, 126);">self</span></a>  <a href="https://www.osti.gov/scitech/search/term:system"><span style="font-size: 0.9em; color: rgb(24, 139, 115);">system</span></a>  <a href="https://www.osti.gov/scitech/search/term:thus"><span style="font-size: 0.9em; color: rgb(7, 118, 9);">thus</span></a>  <a href="https://www.osti.gov/scitech/search/term:triangles"><span style="font-size: 0.9em; color: rgb(112, 69, 58);">triangles</span></a>  <a href="https://www.osti.gov/scitech/search/term:use"><span style="font-size: 0.9em; color: rgb(123, 140, 27);">use</span></a>  <a href="https://www.osti.gov/scitech/search/term:using"><span style="font-size: 0.9em; color: rgb(136, 33, 58);">using</span></a> </div></div>
+										<div class="tab-pane" id="tab-mlt">
+											<ol class="item-list documents padding" id="citation-mlt" style="min-height: 80px;">
+											</ol>
+										</div>
+									</div>
+									<div class="push_top"></div>
+								</div>
+								
+							</div>
+							
+						</div>
+                        
+                            
+					</div>
+					<div class="col-lg-3">
+                        <div id="citation-sidebar">
+							
+								
+								
+									<ul class="nav nav-list" id="citation-fulltext-sidebar">
+<li class="nav-header">Full Text</li>
+	<li class="small"><a class="fulltext-link" data-ostiid="1239211" data-product-type="Technical Report" data-product-subtype="" href="https://www.osti.gov/scitech/servlets/purl/1239211" target="_top"><img src="12" class="pg-tn" onerror="this.src='/scitech/img/ui/tn-na.jpg';" alt="preview image" style="border: 1px solid rgb(164, 164, 164); margin-bottom: 5px;" width="102" border="0" height="132"></a></li>
+							<li><span class="text-muted pull-right"><small id="citation-fulltext-sidebar-sizetext">(10.82 MB)</small></span><small><a class="misc fulltext-link" data-ostiid="1239211" data-product-type="Technical Report" data-product-subtype="" href="https://www.osti.gov/scitech/servlets/purl/1239211" target="_top">View Full Text <img src="page_white_acrobat.png" alt="View Full Text" id="citation-fulltext-sidebar-size" class="ft_icon"></a></small></li>
+						<li class="divider"></li>
+				<li class="small"><div>DOI: &nbsp;<a href="https://doi.org/10.2172/1239211" target="_top" title="Document DOI URL" class="doi-link" data-ostiid="1239211" data-product-type="Technical Report" data-product-subtype="" style="overflow-wrap: break-word;">10.2172/1239211</a></div><div class="text-muted ft_doi_txt">Select the DOI to obtain a copy of this technical report from the publisher.</div></li>
+			</ul>
+								
+							
+							<div class="hidden-print">
+                                
+								
+									
+									
+										
+									
+								
+                                
+								
+									<ul class="nav nav-list">
+										<li class="divider"></li>
+										<li class="nav-header">Save / Share this Record</li>
+										<li class="dropdown" style="margin-bottom: 2px;">
+											<small>
+											<a class="dropdown-toggle" href="#" data-toggle="dropdown">Citation Formats <span class="fa fa-angle-down" style="color: rgb(170, 170, 170);" aria-hidden="true"></span></a>
+											<ul class="dropdown-menu" style="min-width: 200px;">
+												<li class="small"><a href="#cite-mla" data-toggle="modal">MLA</a></li>
+												<li class="small"><a href="#cite-apa" data-toggle="modal">APA</a></li>
+												<li class="small"><a href="#cite-chi" data-toggle="modal">Chicago</a></li>
+												<li class="small"><a href="#cite-bib" data-toggle="modal">Bibtex</a></li>
+											</ul>
+											</small>
+										</li>
+										<li class="dropdown" style="margin-bottom: 2px;">
+											<small>
+											<a class="dropdown-toggle" href="#" data-toggle="dropdown">Export Metadata <span class="fa fa-angle-down" style="color: rgb(170, 170, 170);" aria-hidden="true"></span></a>
+											<ul class="dropdown-menu" style="min-width: 200px;">
+												<li class="small"><a href="#" class="export-link" data-export="biblio" data-ostiid="1239211" data-format="enw" rel="nofollow">Endnote</a></li>
+                                                <li class="small"><a href="#" class="export-link" data-export="biblio" data-ostiid="1239211" data-format="ris" rel="nofollow">RIS</a></li>
+												<li class="small"><a href="#" class="export-link" data-export="biblio" data-ostiid="1239211" data-format="xls" rel="nofollow">Excel</a></li>
+												<li class="small"><a href="#" class="export-link" data-export="biblio" data-ostiid="1239211" data-format="csv" rel="nofollow">CSV</a></li>
+												<li class="small"><a href="#" class="export-link" data-export="biblio" data-ostiid="1239211" data-format="xml" rel="nofollow">XML</a></li>
+											</ul>
+											</small>
+										</li>
+										
+											
+											
+												<li style="margin-bottom: 2px;"><small><a href="#" id="savedoc-btn-disabled" class="" data-toggle="popover" data-placement="left" data-content="You must <a class=&quot;&quot; href=&quot;/scitech/login&quot;>Sign In</a> or <a href=&quot;/scitech/createaccount&quot;>Create an Account</a> in order to save documents to your library." title="" data-original-title="Save this document">Save to My Library</a></small></li>
+											
+										
+										<li style="margin-bottom: 2px;"><small><a href="#shareemail" data-toggle="modal">Send to Email</a></small>
+											<div id="shareemail" class="modal" tabindex="-1" role="dialog" aria-labelledby="shareemail_label" aria-hidden="true">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+															<header id="shareemail_label">Send to Email</header>
+														</div>
+														<form id="sendtoemail-form" style="margin-bottom: 0px;" action="https://www.osti.gov/scitech/biblio/1239211">
+														<div class="modal-body" id="shareemail_body">
+															<div class="modal-body-default">
+																<label for="sendtoemail-email">Email address:</label><br>
+																<input name="email" value="" class="col-md-5 input-sm form-control" id="sendtoemail-email" type="text">
+																<input name="osti_id" id="sendtoemail-osti_id" value="1239211" type="hidden">
+																<input name="subject" id="sendtoemail-subject" type="hidden">
+																<div class="clearfix"></div>
+																<div class="hide"><label for="sendtoemail-body">Content:</label></div>
+																<textarea name="body" id="sendtoemail-body" style="display: none;"></textarea>
+															</div>
+															<div class="modal-body-submitted hide">
+
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+															<button class="btn btn-sm btn-default" aria-hidden="true" type="submit" id="shareemail_submit"><span class="fa fa-envelope-o"></span> Send</button>
+														</div>
+														</form>
+													</div>
+												</div>
+											</div>	
+                                        </li>
+									</ul>
+									<div id="cite-mla" class="modal" tabindex="-1" role="dialog" aria-labelledby="cite-mla_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content">
+										<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><header id="cite-mla_label">Cite: MLA Format</header></div>
+										<div class="modal-body" id="cite-mla_body"></div>
+										<div class="modal-footer"><button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+									</div></div></div>
+									<div id="cite-apa" class="modal" tabindex="-1" role="dialog" aria-labelledby="cite-apa_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content">
+										<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><header id="cite-apa_label">Cite: APA Format</header></div>
+										<div class="modal-body" id="cite-apa_body"></div>
+										<div class="modal-footer"><button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+									</div></div></div>
+									<div id="cite-chi" class="modal" tabindex="-1" role="dialog" aria-labelledby="cite-chi_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content">
+										<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><header id="cite-chi_label">Cite: Chicago Format</header></div>
+										<div class="modal-body" id="cite-chi_body"></div>
+										<div class="modal-footer"><button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+									</div></div></div>
+									<div id="cite-bib" class="modal" tabindex="-1" role="dialog" aria-labelledby="cite-bib_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content">
+										<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><header id="cite-bib_label">Cite: Bibtex Format</header></div>
+										<div class="modal-body" id="cite-bib_body"></div>
+										<div class="modal-footer"><button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+									</div></div></div>
+								
+							</div>
+							<div class="push_top"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+				
+					
+					<div class="tab-pane" id="tab-citation-search">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="citation-search" style="margin: 20px;">
+									<div class="navbar navbar-default">
+										<div class="navbar-inner">
+											<div class="pull-left hide" id="citation-searchresults" style="line-height: 20px; padding: 13px 13px 10px;">
+												<span id="citation-searchresults-numpages">0</span> pages in this document matching the terms "<span id="citation-searchresults-terms"></span>"
+											</div>
+											<form class="navbar-form pull-right" style="width: 250px;" id="docsearch-form" action="https://www.osti.gov/scitech/biblio/1239211">
+												<div class="input-group" style="margin-top: 1px; margin-bottom: 0px;">
+													<input class="col-md-2 input-sm form-control" id="doc-search-query" type="text">
+													<label for="doc-search-query" class="hide">Search For Terms:</label>
+													<span class="input-group-btn"><button type="submit" class="btn btn-sm btn-default"><span class="fa fa-search"></span></button></span>
+												</div>
+											</form>
+										</div>
+									</div>
+									<ol id="docsearch-results" class="item-list documents init" style="min-height: 300px;">
+										<div class="padding" style="text-align: center;">Enter terms in the toolbar above to search the full text of this document for pages containing specific keywords.</div>
+									</ol>
+									<div id="docsearch-preview" class="modal" tabindex="-1" role="dialog" aria-labelledby="docsearch-preview_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content">
+										<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><header id="docsearch-preview_label">Title</header></div>
+										<div class="modal-body" id="docsearch-preview_body" style="overflow: auto;"></div>
+										<div class="modal-footer"><div class="btn-group pull-left" id="docsearch-preview_pager"></div><button class="btn btn-sm btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+									</div></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+			
+		</div>
+
+		</div>
+
+		
+			
+		
+
+
+
+
+<div id="footer-wrapper">
+    <div class="footer-content">
+		
+			<div class="footer-extlink text-muted hidden-print"><small>Some links on this page may take you to non-federal websites. Their policies may differ from this site.</small></div>
+		
+    </div>
+	
+</div>
+</div>
+</div>
+
+
+<div class="push_top"></div>
+
+</div>
+
+<!-- /content -->
+
+<!-- footer -->
+<footer class="">
+  
+	<div class="footer-pre">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<script type="text/javascript">/* <![CDATA[ */ user = "scitechcomments"; site = "osti.gov"; subject = "?subject=Comments or Suggestions"; content = "<span class='fa fa-comment-o' aria-hidden='true'></span> Have feedback or questions? Let us know!"; document.write('<a href="mailto:' + user + '@' + site + subject + '">' + (content != '' ? content : (user + '@' + site)) + '</a>'); /* ]]> */</script><a href="mailto:scitechcomments@osti.gov?subject=Comments%20or%20Suggestions"><span class="fa fa-comment-o" aria-hidden="true"></span> Have feedback or questions? Let us know!</a>
+			</div>
+			<div class="col-md-6 text-right">
+				<a href="#top"><span class="fa fa-arrow-up" aria-hidden="true"></span> Back to top</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="footer-main" style="padding-top: 15px; padding-bottom: 5px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+        <div class="footer-main-logo">
+			<img id="doe_sc_osti" src="DOE_SC_OSTI_70th_white.png" alt="" usemap="#Map_SC" class="doe-sc-osti" border="0">
+			
+        </div>
+				<map id="Map_SC" name="Map_SC">
+				  <area href="https://energy.gov/" target="_self" coords="1,1,150,43" shape="rect" alt="U.S. Department of Energy">
+				  <area href="http://science.energy.gov/" target="_self" coords="160,1,230,43" shape="rect" alt="Office of Science">
+				  <area href="https://www.osti.gov/home" target="_self" coords="240,1,495,43" shape="rect" alt="Office of Scientific and Technical Information">
+				</map>
+				<div class="text-center" style="margin-top: 3px;">
+					<a href="https://www.osti.gov/scitech/disclaimer">Website Policies <span class="hidden-xs">/ Important Links</span></a> <span class="footer-sep">•</span>
+					<a href="https://www.osti.gov/scitech/sitemap">Site Map</a> <span class="footer-sep">•</span>
+					<a href="https://www.osti.gov/scitech/contact">Contact Us</a>
+				</div>
+			</div>
+
+		</div>
+			
+		<div class="row" style="/* margin-top: 15px; */">
+			<div class="col-xs-12">
+				<div align="center">
+					<button class="footer-chevron collapsed" alt="Display additional footer links" data-toggle="collapse" data-target="#footer-tray">
+                        <span class="fa fa-3x fa-angle-down" style="color: rgb(255, 255, 255);" aria-hidden="true"></span>
+                        <span class="fa fa-3x fa-angle-up" style="color: rgb(255, 255, 255);" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	</div>
+
+	<div class="footer-tray collapse" id="footer-tray">
+	<div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+		<div class="row">
+			<div class="col-md-4 text-left footer-links-l">
+				<ul>
+					<li class="nav-header"><span class="fa fa-angle-right" style="color: rgb(204, 204, 204);" aria-hidden="true"></span> About SciTech Connect:</li>
+					<li><a href="https://www.osti.gov/scitech/disclaimer">Website Policies / Important Links</a></li>
+					<li><a href="https://www.osti.gov/scitech/about">About</a></li>
+					<li><a href="https://www.osti.gov/scitech/faq">FAQ</a></li>
+					<li><a href="https://www.osti.gov/scitech/api/v1/docs">API Documentation</a></li>
+					<li><a href="https://www.osti.gov/scitech/orcid">ORCID Integration</a></li>
+					<li><a href="https://www.osti.gov/scitech/availability">Document Availability</a></li>
+					<li><a href="https://www.osti.gov/scitech/sitemap">Site Map</a></li>
+					<li><a href="https://www.osti.gov/scitech/contact">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 text-center footer-links-c">
+				<ul>
+					<li class="nav-header"><span class="fa fa-angle-right" style="color: rgb(204, 204, 204);" aria-hidden="true"></span> About DOE / OSTI:</li>
+					<li><a href="https://www.osti.gov/home/mission.html" target="_top">Mission <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.osti.gov/home/doecommunity.html" target="_top">DOE STI Program <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.osti.gov/home/document/osti-organization-chart" target="_top">Organization Chart <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.osti.gov/home/history.html" target="_top">History <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 text-right footer-links-r">
+				<ul>
+					<li class="nav-header"><span class="fa fa-angle-right" style="color: rgb(204, 204, 204);" aria-hidden="true"></span> DOE Science Resources:</li>
+					<li><a href="https://www.osti.gov/pages" target="_top">DOE PAGES <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.osti.gov/dataexplorer" target="_top">DOE Data Explorer <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.osti.gov/home/collections" target="_top">More DOE Collections » <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li class="nav-header"><span class="fa fa-angle-right" style="color: rgb(204, 204, 204);" aria-hidden="true"></span> U.S. / Global Science Resources:</li>
+					<li><a href="https://www.science.gov/" target="_top">Science.gov <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+					<li><a href="https://www.worldwidescience.org/" target="_top">WorldWideScience.org <span class="fa fa-external-link" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>  
+			
+</footer>
+<!-- /footer -->
+
+<!-- scripts, load at the end for speed -->
+<script defer="" src="MathJax.js"></script>
+<script defer="" src="jquery.min.js"></script>
+<script defer="" src="scitech.170627.0901.js"></script>
+<!-- /scripts -->
+<script type="text/javascript">
+
+                    
+                        
+                           
+                            var words = [{w:"0,1",c:3},{w:"0.00327",c:1},{w:"0.005",c:1},{w:"0.01",c:1},{w:"0.015",c:1},{w:"0.02",c:1},{w:"0.025",c:1},{w:"0.03",c:1},{w:"0.035",c:1},{w:"0.04",c:1},{w:"0.05",c:8},{w:"0.1",c:12},{w:"0.15",c:7},{w:"0.15­",c:1},{w:"0.2",c:17},{w:"0.2035",c:1},{w:"0.25",c:2},{w:"0.25­",c:1},{w:"0.2­",c:1},{w:"0.3",c:3},{w:"0.35",c:3},{w:"0.3­",c:1},{w:"0.4",c:9},{w:"0.4­",c:1},{w:"0.5",c:19},{w:"0.534",c:1},{w:"0.5p",c:1},{w:"0.6",c:11},{w:"0.6­",c:1},{w:"0.7",c:4},{w:"0.8",c:2},{w:"0.808",c:1},{w:"0.811",c:1},{w:"0.9",c:2},{w:"000",c:2},{w:"072",c:1},{w:"07na27344",c:2},{w:"0rl",c:1},{w:"1.0034",c:1},{w:"1.1",c:8},{w:"1.10",c:3},{w:"1.11",c:4},{w:"1.12",c:6},{w:"1.13",c:3},{w:"1.14",c:3},{w:"1.15",c:3},{w:"1.16",c:3},{w:"1.17",c:2},{w:"1.18",c:3},{w:"1.19",c:4},{w:"1.2",c:11},{w:"1.20",c:3},{w:"1.21",c:3},{w:"1.22",c:3},{w:"1.23",c:4},{w:"1.24",c:4},{w:"1.25",c:3},{w:"1.26",c:1},{w:"1.27",c:1},{w:"1.28",c:6},{w:"1.29",c:2},{w:"1.3",c:15},{w:"1.30",c:1},{w:"1.31",c:5},{w:"1.32",c:2},{w:"1.33",c:1},{w:"1.34",c:1},{w:"1.35",c:1},{w:"1.36",c:2},{w:"1.37",c:1},{w:"1.38",c:3},{w:"1.39",c:2},{w:"1.4",c:7},{w:"1.4.1",c:1},{w:"1.4.2",c:2},{w:"1.4.3",c:1},{w:"1.40",c:3},{w:"1.41",c:3},{w:"1.42",c:2},{w:"1.43",c:2},{w:"1.44",c:1},{w:"1.45",c:1},{w:"1.46",c:1},{w:"1.47",c:1},{w:"1.48",c:1},{w:"1.49",c:4},{w:"1.5",c:13},{w:"1.5.1",c:3},{w:"1.5.2",c:6},{w:"1.5.3",c:1},{w:"1.5.4",c:1},{w:"1.50",c:2},{w:"1.51",c:2},{w:"1.52",c:1},{w:"1.53",c:1},{w:"1.54",c:1},{w:"1.55",c:1},{w:"1.56",c:1},{w:"1.57",c:1},{w:"1.58",c:1},{w:"1.59",c:1},{w:"1.5­",c:2},{w:"1.6",c:6},{w:"1.60",c:3},{w:"1.61",c:6},{w:"1.62",c:2},{w:"1.63",c:5},{w:"1.7",c:4},{w:"1.8",c:5},{w:"1.9",c:3},{w:"100",c:20},{w:"1000",c:59},{w:"10000",c:21},{w:"10166.16",c:1},{w:"1071",c:1},{w:"1082",c:1},{w:"1111",c:1},{w:"11429.50",c:1},{w:"115",c:1},{w:"120",c:2},{w:"1200",c:1},{w:"120295",c:1},{w:"12412",c:1},{w:"125",c:1},{w:"12572",c:4},{w:"126",c:1},{w:"13331.57",c:1},{w:"13333.55",c:2},{w:"13413.01",c:1},{w:"13420.31",c:1},{w:"13421.12",c:2},{w:"13421.21",c:1},{w:"13421.65",c:1},{w:"13422",c:4},{w:"13442.5",c:1},{w:"13502.5",c:3},{w:"13511.56",c:3},{w:"13512",c:1},{w:"13720.66",c:3},{w:"13721",c:1},{w:"13832.54",c:3},{w:"13833",c:1},{w:"13889.77",c:1},{w:"13890",c:1},{w:"13890.12",c:4},{w:"140",c:1},{w:"145",c:1},{w:"1458",c:3},{w:"150",c:3},{w:"1500",c:3},{w:"156",c:1},{w:"15879",c:1},{w:"15882",c:1},{w:"161",c:1},{w:"167",c:1},{w:"180",c:1},{w:"1921.24",c:1},{w:"1922",c:1},{w:"1960",c:1},{w:"1981",c:1},{w:"1995",c:1},{w:"1chapter",c:1},{w:"1eft",c:1},{w:"1q21",c:1},{w:"1this",c:1},{w:"2.1",c:4},{w:"2.10",c:3},{w:"2.11",c:3},{w:"2.12",c:4},{w:"2.13",c:3},{w:"2.14",c:3},{w:"2.15",c:4},{w:"2.16",c:4},{w:"2.17",c:4},{w:"2.18",c:5},{w:"2.19",c:4},{w:"2.1a",c:1},{w:"2.2",c:9},{w:"2.20",c:3},{w:"2.21",c:5},{w:"2.22",c:4},{w:"2.23",c:2},{w:"2.24",c:2},{w:"2.25",c:2},{w:"2.3",c:7},{w:"2.342",c:1},{w:"2.4",c:6},{w:"2.5",c:6},{w:"2.6",c:3},{w:"2.7",c:2},{w:"2.8",c:2},{w:"2.9",c:1},{w:"200",c:7},{w:"2000",c:58},{w:"2001",c:1},{w:"2002",c:2},{w:"2010",c:1},{w:"2011",c:1},{w:"2012",c:2},{w:"2013",c:3},{w:"2014",c:1},{w:"2015",c:1},{w:"21085.51",c:1},{w:"22m",c:1},{w:"233.35",c:1},{w:"23937.66",c:4},{w:"23938",c:1},{w:"24m2",c:2},{w:"250",c:4},{w:"26844",c:1},{w:"295",c:1},{w:"2aiaj",c:9},{w:"2aiq",c:1},{w:"2m2",c:6},{w:"2m3",c:1},{w:"2ma",c:1},{w:"2mchapter",c:1},{w:"2min",c:1},{w:"2mj",c:1},{w:"2mpij",c:2},{w:"2my",c:1},{w:"2nd",c:1},{w:"2pii",c:9},{w:"2pij",c:5},{w:"3.72e4",c:1},{w:"300",c:8},{w:"3000",c:53},{w:"300kl",c:1},{w:"305",c:1},{w:"342.42",c:1},{w:"350",c:4},{w:"35chapter",c:1},{w:"4.656",c:1},{w:"400",c:7},{w:"4000",c:53},{w:"41.875",c:1},{w:"4158",c:1},{w:"450",c:1},{w:"4500",c:1},{w:"491",c:1},{w:"4m2",c:8},{w:"4mj",c:2},{w:"4p2i",c:2},{w:"4pjj",c:1},{w:"500",c:12},{w:"5000",c:52},{w:"5000node",c:1},{w:"502.5",c:1},{w:"50l",c:1},{w:"531",c:1},{w:"53j",c:1},{w:"578.84",c:1},{w:"6.78e",c:1},{w:"600",c:1},{w:"6000",c:25},{w:"641.83",c:1},{w:"6474",c:1},{w:"6561",c:1},{w:"665572",c:1},{w:"6732",c:1},{w:"678729",c:1},{w:"694.25",c:1},{w:"7000",c:23},{w:"8000",c:1},{w:"879",c:1},{w:"9.01",c:1},{w:"9.876",c:1},{w:"900l",c:1},{w:"_2a",c:1},{w:"_kl",c:1},{w:"a20",c:1},{w:"ability",c:1},{w:"able",c:4},{w:"ac52",c:2},{w:"academy",c:2},{w:"account",c:2},{w:"accuracy",c:3},{w:"accurate",c:1},{w:"actual",c:78},{w:"actually",c:10},{w:"add",c:10},{w:"adding",c:5},{w:"additional",c:2},{w:"adjacency",c:12},{w:"affect",c:2},{w:"affinity",c:1},{w:"again",c:11},{w:"agency",c:1},{w:"aiaj",c:3},{w:"aiello",c:1},{w:"aii",c:32},{w:"aiip",c:1},{w:"aij",c:41},{w:"aj'i",c:1},{w:"aj9",c:1},{w:"aji",c:12},{w:"ajj",c:11},{w:"ajjajkajk",c:3},{w:"ajk",c:5},{w:"ajq",c:1},{w:"akj",c:1},{w:"alan",c:1},{w:"albeit",c:1},{w:"algorithm",c:146},{w:"algorithms",c:1},{w:"ali",c:4},{w:"all",c:29},{w:"allchapter",c:1},{w:"allow",c:1},{w:"allowed",c:1},{w:"allowing",c:1},{w:"allows",c:3},{w:"almost",c:1},{w:"alogirthm",c:1},{w:"already",c:2},{w:"also",c:25},{w:"although",c:7},{w:"always",c:2},{w:"amount",c:1},{w:"amounts",c:1},{w:"analysis",c:47},{w:"analyze",c:6},{w:"andp3",c:1},{w:"annals",c:1},{w:"another",c:4},{w:"any",c:21},{w:"apparatus",c:1},{w:"apparent",c:1},{w:"appear",c:4},{w:"appearing",c:1},{w:"appears",c:4},{w:"approach",c:3},{w:"approaches",c:2},{w:"approxi­",c:1},{w:"april",c:2},{w:"arb",c:1},{w:"argue",c:1},{w:"aric",c:1},{w:"arxiv",c:2},{w:"aschapter",c:1},{w:"assume",c:13},{w:"assumed",c:5},{w:"assumes",c:2},{w:"assuming",c:1},{w:"assumption",c:2},{w:"asymptotic",c:1},{w:"ati",c:1},{w:"attractive",c:4},{w:"august",c:1},{w:"auspices",c:2},{w:"author",c:1},{w:"authors",c:2},{w:"autonomous",c:43},{w:"average",c:75},{w:"aware",c:2},{w:"bad",c:1},{w:"bag",c:6},{w:"base",c:1},{w:"based",c:8},{w:"basic",c:1},{w:"basis",c:1},{w:"bdi",c:1},{w:"become",c:2},{w:"becomes",c:1},{w:"been",c:6},{w:"begin",c:11},{w:"being",c:11},{w:"belongs",c:4},{w:"benchmark",c:1},{w:"bernoulli",c:43},{w:"better",c:15},{w:"betweeen",c:42},{w:"binomial",c:5},{w:"block",c:1},{w:"bml",c:1},{w:"both",c:17},{w:"bound",c:46},{w:"break",c:1},{w:"bruce",c:2},{w:"build",c:2},{w:"building",c:2},{w:"c424",c:1},{w:"c452",c:1},{w:"calculate",c:18},{w:"calculated",c:8},{w:"can",c:109},{w:"canada",c:1},{w:"cannot",c:2},{w:"can’t",c:1},{w:"capture",c:1},{w:"case",c:29},{w:"cases",c:4},{w:"centered",c:1},{w:"central",c:2},{w:"certain",c:6},{w:"change",c:7},{w:"changed",c:1},{w:"changes",c:2},{w:"chapter",c:18},{w:"choice",c:2},{w:"choose",c:3},{w:"choosing",c:12},{w:"chosen",c:6},{w:"chung",c:181},{w:"classic",c:1},{w:"closer",c:8},{w:"clustering",c:10},{w:"collection",c:2},{w:"combin",c:1},{w:"combina­",c:1},{w:"combine",c:1},{w:"combined",c:2},{w:"combining",c:1},{w:"comes",c:2},{w:"commercial",c:1},{w:"community",c:6},{w:"compare",c:9},{w:"comparing",c:45},{w:"comparison",c:1},{w:"component",c:1},{w:"components",c:2},{w:"comput",c:1},{w:"compute",c:1},{w:"computed",c:1},{w:"computer",c:1},{w:"computing",c:1},{w:"conclusion",c:3},{w:"condensed",c:2},{w:"condition",c:4},{w:"conf",c:1},{w:"conference",c:1},{w:"connected",c:5},{w:"consider",c:10},{w:"constitute",c:1},{w:"constraint",c:60},{w:"contract",c:2},{w:"contrast",c:1},{w:"contribute",c:2},{w:"correct",c:1},{w:"cost",c:2},{w:"count",c:11},{w:"counted",c:2},{w:"counts",c:2},{w:"course",c:4},{w:"create",c:3},{w:"created",c:8},{w:"critical",c:1},{w:"data",c:3},{w:"dealing",c:1},{w:"decide",c:1},{w:"decrease",c:1},{w:"decreases",c:2},{w:"decreasing",c:2},{w:"define",c:14},{w:"defined",c:29},{w:"defines",c:2},{w:"defining",c:1},{w:"deg",c:2},{w:"degree",c:458},{w:"degrees",c:9},{w:"delchapter",c:1},{w:"denote",c:1},{w:"denoted",c:1},{w:"department",c:2},{w:"dependence",c:2},{w:"depth",c:37},{w:"describe",c:1},{w:"described",c:11},{w:"describes",c:1},{w:"design",c:3},{w:"designed",c:1},{w:"desired",c:3},{w:"desterck",c:1},{w:"detail",c:1},{w:"determine",c:7},{w:"determined",c:3},{w:"develop",c:1},{w:"developing",c:1},{w:"deviation",c:2},{w:"devise",c:1},{w:"diagonal",c:1},{w:"did",c:1},{w:"differ",c:1},{w:"difference",c:145},{w:"different",c:23},{w:"differs",c:1},{w:"difficult",c:3},{w:"directed",c:2},{w:"discard",c:1},{w:"discarding",c:1},{w:"disclosed",c:1},{w:"discuss",c:1},{w:"discussion",c:4},{w:"distance",c:1},{w:"distinct",c:7},{w:"diz",c:1},{w:"document",c:1},{w:"does",c:12},{w:"doesn't",c:1},{w:"doesn’t",c:2},{w:"doing",c:1},{w:"don’t",c:4},{w:"double",c:1},{w:"draw",c:41},{w:"drawing",c:22},{w:"drawn",c:20},{w:"draws",c:19},{w:"due",c:1},{w:"duplicate",c:4},{w:"durak",c:1},{w:"e.x",c:1},{w:"each",c:46},{w:"ease",c:1},{w:"easily",c:3},{w:"easy",c:1},{w:"edge",c:82},{w:"edges",c:150},{w:"editors",c:1},{w:"effect",c:1},{w:"efficient",c:1},{w:"either",c:6},{w:"ekj2",c:1},{w:"element",c:11},{w:"elements",c:12},{w:"else",c:3},{w:"emi",c:1},{w:"employees",c:1},{w:"end",c:25},{w:"endchapter",c:1},{w:"energy",c:2},{w:"enough",c:1},{w:"ensure",c:5},{w:"ensures",c:1},{w:"entire",c:1},{w:"equal",c:31},{w:"equally",c:2},{w:"equals",c:1},{w:"equation",c:55},{w:"equations",c:6},{w:"equivalent",c:5},{w:"erd",c:1},{w:"erdos",c:6},{w:"error",c:3},{w:"especially",c:1},{w:"estimate",c:1},{w:"evaluate",c:1},{w:"even",c:5},{w:"event",c:9},{w:"events",c:4},{w:"every",c:5},{w:"evolution",c:1},{w:"exact",c:2},{w:"exactly",c:2},{w:"examine",c:10},{w:"examined",c:7},{w:"examining",c:3},{w:"example",c:1},{w:"exclude",c:4},{w:"exclusive",c:2},{w:"executed",c:1},{w:"exhaustive",c:2},{w:"existing",c:1},{w:"exists",c:1},{w:"expected",c:292},{w:"expense",c:1},{w:"expensive",c:4},{w:"explains",c:1},{w:"explore",c:7},{w:"exposition",c:1},{w:"expressed",c:2},{w:"extension",c:1},{w:"f'mj",c:1},{w:"fact",c:12},{w:"factors",c:1},{w:"fairly",c:3},{w:"fan",c:3},{w:"fast",c:9},{w:"favoring",c:1},{w:"fewer",c:2},{w:"figure",c:83},{w:"figures",c:18},{w:"finally",c:3},{w:"find",c:15},{w:"finding",c:3},{w:"finite",c:1},{w:"first",c:3},{w:"fixed",c:3},{w:"flow",c:1},{w:"fmr",c:1},{w:"focus",c:2},{w:"follow",c:1},{w:"follows",c:9},{w:"force",c:1},{w:"forchapter",c:1},{w:"form",c:5},{w:"formally",c:5},{w:"formula",c:5},{w:"formulas",c:1},{w:"forward",c:1},{w:"found",c:3},{w:"four",c:1},{w:"fraction",c:1},{w:"framework",c:1},{w:"free",c:1},{w:"frieze",c:1},{w:"function",c:17},{w:"further",c:2},{w:"general",c:55},{w:"generate",c:19},{w:"generated",c:9},{w:"generates",c:1},{w:"generating",c:2},{w:"generation",c:1},{w:"generative",c:1},{w:"generator",c:2},{w:"generators",c:3},{w:"geoffrey",c:1},{w:"get",c:15},{w:"giant",c:1},{w:"give",c:1},{w:"gives",c:4},{w:"goal",c:2},{w:"goes",c:2},{w:"good",c:2},{w:"government",c:4},{w:"graham",c:1},{w:"graph",c:98},{w:"graphs",c:19},{w:"greater",c:9},{w:"grows",c:3},{w:"guarantee",c:4},{w:"hagberg",c:2},{w:"hans",c:1},{w:"happens",c:10},{w:"hard",c:1},{w:"having",c:4},{w:"held",c:1},{w:"hence",c:3},{w:"here",c:1},{w:"herein",c:2},{w:"higher",c:10},{w:"highest",c:2},{w:"highlight",c:1},{w:"hold",c:7},{w:"holds",c:8},{w:"horn",c:1},{w:"how",c:16},{w:"however",c:49},{w:"hungarian",c:1},{w:"i.e",c:17},{w:"ichapter",c:1},{w:"idea",c:2},{w:"ideal",c:2},{w:"ideally",c:1},{w:"ieee",c:1},{w:"iep",c:1},{w:"ifchapter",c:1},{w:"ignore",c:4},{w:"ihp",c:1},{w:"iii",c:25},{w:"illustrate",c:1},{w:"imbedded",c:1},{w:"imin",c:4},{w:"imj",c:1},{w:"impact",c:5},{w:"implied",c:1},{w:"implies",c:18},{w:"imply",c:3},{w:"important",c:7},{w:"improve",c:4},{w:"improved",c:1},{w:"improves",c:4},{w:"improving",c:22},{w:"inchapter",c:1},{w:"include",c:5},{w:"included",c:3},{w:"increase",c:9},{w:"increases",c:3},{w:"increasing",c:4},{w:"indicates",c:1},{w:"inequality",c:3},{w:"infringe",c:1},{w:"initial",c:3},{w:"input",c:10},{w:"inputs",c:1},{w:"instance",c:24},{w:"instances",c:47},{w:"instead",c:5},{w:"institute",c:1},{w:"interest",c:1},{w:"interested",c:12},{w:"internet",c:1},{w:"introduce",c:3},{w:"introduced",c:2},{w:"involves",c:2},{w:"ipij",c:1},{w:"ischapter",c:1},{w:"issue",c:1},{w:"issues",c:1},{w:"iterations",c:3},{w:"iterative",c:1},{w:"itself",c:1},{w:"iut",c:1},{w:"iyr",c:2},{w:"j.chapter",c:1},{w:"j2m",c:1},{w:"jkl",c:1},{w:"jmm",c:1},{w:"job",c:1},{w:"joel",c:1},{w:"joint",c:3},{w:"journal",c:2},{w:"just",c:4},{w:"k.kj",c:2},{w:"k24m",c:1},{w:"k2kj2",c:2},{w:"k2where",c:1},{w:"kika",c:1},{w:"kikj",c:19},{w:"kj.chapter",c:2},{w:"kj2",c:3},{w:"kj4",c:2},{w:"kjk",c:1},{w:"kjk3",c:2},{w:"kjkj",c:6},{w:"kjkk",c:1},{w:"kmkf2",c:1},{w:"know",c:12},{w:"knowledge",c:1},{w:"known",c:2},{w:"kolda",c:6},{w:"kronecker",c:1},{w:"l47",c:1},{w:"l64",c:1},{w:"label",c:1},{w:"labelled",c:1},{w:"labo",c:1},{w:"laboratory",c:2},{w:"lack",c:3},{w:"large",c:23},{w:"larger",c:4},{w:"largest",c:11},{w:"law",c:5},{w:"lawrence",c:6},{w:"ldrd",c:1},{w:"le2",c:1},{w:"lead",c:1},{w:"least",c:11},{w:"leave",c:1},{w:"lecture",c:1},{w:"left",c:1},{w:"legal",c:1},{w:"less",c:23},{w:"let",c:12},{w:"level",c:1},{w:"liability",c:1},{w:"limiting",c:1},{w:"linyuan",c:3},{w:"lists",c:1},{w:"livermore",c:6},{w:"llc",c:3},{w:"llnl",c:2},{w:"long",c:1},{w:"longer",c:9},{w:"look",c:10},{w:"looked",c:2},{w:"looks",c:1},{w:"loop",c:1},{w:"low",c:2},{w:"lower",c:7},{w:"made",c:1},{w:"magnitude",c:1},{w:"maiaj",c:1},{w:"majority",c:1},{w:"make",c:2},{w:"makes",c:7},{w:"manda",c:1},{w:"many",c:4},{w:"maps",c:1},{w:"march",c:1},{w:"mass",c:5},{w:"match",c:20},{w:"matching",c:8},{w:"mathematic",c:1},{w:"mation",c:1},{w:"matrix",c:13},{w:"max",c:2},{w:"maximum",c:8},{w:"may",c:11},{w:"mean",c:1},{w:"means",c:2},{w:"measure",c:1},{w:"measured",c:1},{w:"measures",c:1},{w:"mentioned",c:10},{w:"method",c:4},{w:"methods",c:2},{w:"michael",c:2},{w:"miller",c:2},{w:"million",c:1},{w:"min",c:23},{w:"minimum",c:2},{w:"mining",c:1},{w:"mjpii",c:1},{w:"ml3",c:1},{w:"model",c:350},{w:"model1",c:1},{w:"modeled",c:1},{w:"modeling",c:1},{w:"models",c:65},{w:"modified",c:1},{w:"modify",c:2},{w:"modifying",c:4},{w:"molloy",c:2},{w:"more",c:16},{w:"most",c:6},{w:"moves",c:1},{w:"mpii",c:2},{w:"much",c:12},{w:"must",c:7},{w:"mutually",c:2},{w:"n_1",c:1},{w:"name",c:2},{w:"names",c:1},{w:"national",c:7},{w:"necessary",c:3},{w:"need",c:8},{w:"needed",c:2},{w:"needs",c:1},{w:"negative",c:4},{w:"neighbors",c:10},{w:"neither",c:2},{w:"network",c:121},{w:"networks",c:15},{w:"never",c:3},{w:"new",c:6},{w:"newman",c:1},{w:"nice",c:5},{w:"nicely",c:1},{w:"nicholas",c:1},{w:"nm1",c:2},{w:"node",c:160},{w:"nodes",c:67},{w:"nonlinear",c:3},{w:"nor",c:2},{w:"normalize",c:2},{w:"note",c:39},{w:"noted",c:9},{w:"notes",c:1},{w:"nothing",c:1},{w:"notice",c:1},{w:"noticeable",c:1},{w:"noting",c:1},{w:"now",c:9},{w:"nserc",c:1},{w:"nsw",c:1},{w:"null",c:3},{w:"number",c:134},{w:"numbers",c:3},{w:"nurcan",c:1},{w:"o0o",c:1},{w:"obtain",c:1},{w:"occur",c:2},{w:"occurring",c:1},{w:"occurs",c:1},{w:"october",c:1},{w:"ofchapter",c:1},{w:"often",c:11},{w:"once",c:10},{w:"one",c:16},{w:"only",c:15},{w:"operations",c:2},{w:"opinions",c:1},{w:"opposed",c:2},{w:"optimal",c:3},{w:"order",c:7},{w:"ordered",c:1},{w:"original",c:35},{w:"originally",c:2},{w:"other",c:13},{w:"otherwise",c:2},{w:"our",c:33},{w:"outlined",c:2},{w:"outlines",c:1},{w:"overshoot",c:2},{w:"owned",c:1},{w:"oxford",c:1},{w:"p.j",c:2},{w:"p122",c:1},{w:"p2i",c:4},{w:"p2j",c:1},{w:"pages",c:4},{w:"pair",c:1},{w:"pairs",c:9},{w:"paper",c:3},{w:"parabola",c:1},{w:"parameter",c:1},{w:"part",c:2},{w:"particular",c:2},{w:"pattern",c:2},{w:"patterns",c:1},{w:"paul",c:1},{w:"pawel",c:1},{w:"pdf",c:3},{w:"perform",c:2},{w:"performed",c:1},{w:"performs",c:4},{w:"perhaps",c:1},{w:"phuu",c:1},{w:"physical",c:1},{w:"pii",c:22},{w:"pij",c:66},{w:"pijx11",c:1},{w:"pinar",c:4},{w:"pj3",c:1},{w:"pji",c:7},{w:"pjj",c:14},{w:"pjjpjkpjk",c:1},{w:"pjk",c:6},{w:"pjkpjk",c:1},{w:"pki",c:1},{w:"place",c:3},{w:"placed",c:2},{w:"plantenga",c:1},{w:"play",c:1},{w:"plot",c:7},{w:"plots",c:28},{w:"plotting",c:2},{w:"point",c:4},{w:"possible",c:2},{w:"power",c:2},{w:"practical",c:1},{w:"practice",c:3},{w:"pralat",c:1},{w:"precludes",c:1},{w:"predicted",c:1},{w:"prepared",c:1},{w:"preprint",c:1},{w:"present",c:2},{w:"presented",c:4},{w:"presenting",c:1},{w:"press",c:1},{w:"previous",c:4},{w:"previously",c:11},{w:"privately",c:1},{w:"probab",c:1},{w:"problem",c:4},{w:"process",c:3},{w:"product",c:3},{w:"project",c:1},{w:"properties",c:13},{w:"property",c:10},{w:"proportion",c:1},{w:"propose",c:1},{w:"proposed",c:2},{w:"proved",c:1},{w:"provide",c:1},{w:"provides",c:3},{w:"purposes",c:1},{w:"put",c:2},{w:"px2px",c:1},{w:"quantify",c:1},{w:"quite",c:8},{w:"random",c:36},{w:"ratory",c:1},{w:"reach",c:2},{w:"real",c:22},{w:"reasons",c:1},{w:"recall",c:1},{w:"reciprocal",c:1},{w:"recorded",c:1},{w:"redefine",c:2},{w:"redefined",c:1},{w:"reduce",c:1},{w:"reed",c:2},{w:"refer",c:9},{w:"reference",c:1},{w:"referred",c:3},{w:"refine",c:1},{w:"reflect",c:1},{w:"reflected",c:1},{w:"regular",c:1},{w:"related",c:2},{w:"relative",c:24},{w:"relativity",c:45},{w:"remain",c:2},{w:"remaining",c:8},{w:"remains",c:4},{w:"remove",c:4},{w:"removing",c:6},{w:"renyi",c:6},{w:"replace",c:2},{w:"replaced",c:1},{w:"represent",c:3},{w:"represents",c:2},{w:"require",c:3},{w:"requires",c:7},{w:"restricted",c:1},{w:"result",c:1},{w:"resulting",c:4},{w:"results",c:2},{w:"return",c:2},{w:"returning",c:4},{w:"review",c:1},{w:"revised",c:1},{w:"revisit",c:3},{w:"revisiting",c:1},{w:"rewrite",c:1},{w:"rights",c:1},{w:"rij",c:1},{w:"role",c:1},{w:"rules",c:1},{w:"run",c:2},{w:"running",c:4},{w:"runtime",c:4},{w:"s.t",c:1},{w:"same",c:16},{w:"sample",c:2},{w:"sanders",c:2},{w:"saw",c:2},{w:"scalable",c:3},{w:"scale",c:1},{w:"science",c:3},{w:"sciences",c:1},{w:"scientific",c:1},{w:"sdm12",c:1},{w:"second",c:1},{w:"section",c:21},{w:"sections",c:3},{w:"security",c:3},{w:"see",c:17},{w:"seen",c:5},{w:"self",c:70},{w:"sense",c:1},{w:"separately",c:1},{w:"september",c:1},{w:"sequence",c:21},{w:"sequences",c:2},{w:"series",c:6},{w:"server",c:1},{w:"service",c:1},{w:"seshadhri",c:4},{w:"set",c:12},{w:"several",c:2},{w:"shall",c:1},{w:"should",c:9},{w:"show",c:6},{w:"showed",c:1},{w:"shown",c:3},{w:"siam",c:2},{w:"similar",c:4},{w:"similarity",c:1},{w:"similarly",c:1},{w:"simple",c:3},{w:"simpler",c:1},{w:"simplified",c:1},{w:"simplify",c:4},{w:"simply",c:13},{w:"single",c:10},{w:"size",c:5},{w:"slightly",c:1},{w:"small",c:4},{w:"smaller",c:2},{w:"smallest",c:1},{w:"solution",c:11},{w:"solve",c:6},{w:"sometimes",c:1},{w:"special",c:1},{w:"specific",c:2},{w:"sponsored",c:1},{w:"springer",c:1},{w:"squares",c:4},{w:"standard",c:4},{w:"state",c:1},{w:"states",c:4},{w:"stating",c:1},{w:"step",c:2},{w:"sterck",c:1},{w:"still",c:30},{w:"stochastic",c:1},{w:"straight",c:1},{w:"strategy",c:1},{w:"strict",c:1},{w:"strictly",c:6},{w:"struct",c:1},{w:"structure",c:6},{w:"studied",c:1},{w:"study",c:1},{w:"studying",c:4},{w:"substitute",c:1},{w:"sufficient",c:4},{w:"suggests",c:1},{w:"sum",c:9},{w:"summarized",c:1},{w:"summarizes",c:3},{w:"summary",c:4},{w:"supplied",c:1},{w:"support",c:3},{w:"supported",c:1},{w:"suppose",c:6},{w:"synthetic",c:3},{w:"system",c:51},{w:"table",c:6},{w:"taken",c:1},{w:"taking",c:1},{w:"tamara",c:4},{w:"term",c:2},{w:"terms",c:8},{w:"test",c:2},{w:"tha",c:1},{w:"thechapter",c:2},{w:"them",c:3},{w:"themselves",c:1},{w:"theorem",c:2},{w:"theory",c:2},{w:"third",c:1},{w:"those",c:4},{w:"three",c:2},{w:"thus",c:34},{w:"tighter",c:2},{w:"time",c:2},{w:"tnf",c:1},{w:"tocn",c:1},{w:"todd",c:1},{w:"too",c:4},{w:"torial",c:1},{w:"total",c:7},{w:"tp11",c:1},{w:"trade",c:1},{w:"trademark",c:1},{w:"traffic",c:1},{w:"treating",c:1},{w:"triangle",c:12},{w:"triangles",c:62},{w:"true",c:6},{w:"try",c:1},{w:"turn",c:2},{w:"twelfth",c:1},{w:"twice",c:2},{w:"two",c:19},{w:"typically",c:1},{w:"u.s",c:2},{w:"underlying",c:5},{w:"undirected",c:2},{w:"uniform",c:3},{w:"unique",c:3},{w:"united",c:4},{w:"university",c:1},{w:"unknown",c:1},{w:"unknowns",c:2},{w:"upper",c:25},{w:"upside",c:1},{w:"usa",c:1},{w:"use",c:35},{w:"used",c:13},{w:"useful",c:1},{w:"usefulness",c:1},{w:"user",c:1},{w:"uses",c:1},{w:"using",c:39},{w:"value",c:28},{w:"values",c:12},{w:"var",c:17},{w:"variable",c:16},{w:"variables",c:10},{w:"variance",c:8},{w:"various",c:1},{w:"vary",c:1},{w:"vector",c:6},{w:"versa",c:1},{w:"version",c:3},{w:"versions",c:1},{w:"vertices",c:3},{w:"very",c:3},{w:"views",c:1},{w:"violate",c:4},{w:"violated",c:41},{w:"violates",c:3},{w:"violation",c:5},{w:"violations",c:1},{w:"visit",c:1},{w:"volume",c:1},{w:"want",c:9},{w:"warranty",c:1},{w:"waw",c:1},{w:"way",c:4},{w:"ways",c:3},{w:"well",c:20},{w:"what",c:10},{w:"whereas",c:1},{w:"whether",c:2},{w:"while",c:9},{w:"why",c:4},{w:"william",c:1},{w:"winlaw",c:2},{w:"words",c:3},{w:"work",c:4},{w:"workshop",c:1},{w:"world",c:7},{w:"wormald",c:1},{w:"write",c:6},{w:"written",c:9},{w:"x11",c:2},{w:"x12",c:3},{w:"xi2",c:1},{w:"xii",c:1},{w:"xij",c:3},{w:"xnn",c:1},{w:"yet",c:1},{w:"york",c:1},{w:"yti",c:1},{w:"zero",c:2}];
+                        
+                    
+				</script>
+              	<script defer="" src="scitech.biblio.170627.0901.js"></script>
+
+
+
+		
+	
+</body>
+</html>

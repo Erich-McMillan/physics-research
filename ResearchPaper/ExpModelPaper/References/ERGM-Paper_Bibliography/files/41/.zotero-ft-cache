@@ -1,0 +1,61 @@
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > cs > arXiv:1503.06725
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    Other formats
+
+( license )
+Current browse context:
+cs.DM
+< prev  |  next >
+new  | recent  | 1503
+Change to browse by:
+cond-mat
+cond-mat.stat-mech
+cs
+cs.DS
+math
+math.CO
+physics
+physics.soc-ph
+References & Citations
+
+    NASA ADS
+
+DBLP - CS Bibliography
+listing | bibtex
+Kevin E. Bassler
+Charo I. Del Genio
+Péter L. Erdös
+István Miklós
+Zoltán Toroczkai
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+Computer Science > Discrete Mathematics
+Title: Exact sampling of graphs with prescribed degree correlations
+Authors: Kevin E. Bassler , Charo I. Del Genio , Péter L. Erdős , István Miklós , Zoltán Toroczkai
+(Submitted on 23 Mar 2015 ( v1 ), last revised 30 Jun 2015 (this version, v2))
+
+    Abstract: Many real-world networks exhibit correlations between the node degrees. For instance, in social networks nodes tend to connect to nodes of similar degree. Conversely, in biological and technological networks, high-degree nodes tend to be linked with low-degree nodes. Degree correlations also affect the dynamics of processes supported by a network structure, such as the spread of opinions or epidemics. The proper modelling of these systems, i.e., without uncontrolled biases, requires the sampling of networks with a specified set of constraints. We present a solution to the sampling problem when the constraints imposed are the degree correlations. In particular, we develop an efficient and exact method to construct and sample graphs with a specified joint-degree matrix, which is a matrix providing the number of edges between all the sets of nodes of a given degree, for all degrees, thus completely specifying all pairwise degree correlations, and additionally, the degree sequence itself. Our algorithm always produces independent samples without backtracking. The complexity of the graph construction algorithm is O(NM) where N is the number of nodes and M is the number of edges. 
+
+Comments: 	25 pages, 7 figures
+Subjects: 	Discrete Mathematics (cs.DM) ; Statistical Mechanics (cond-mat.stat-mech); Data Structures and Algorithms (cs.DS); Combinatorics (math.CO); Physics and Society (physics.soc-ph)
+DOI : 	10.1088/1367-2630/17/8/083052
+Cite as: 	arXiv:1503.06725 [cs.DM]
+  	(or arXiv:1503.06725v2 [cs.DM] for this version)
+Submission history
+From: Charo del Genio [ view email ]
+[v1] Mon, 23 Mar 2015 16:58:16 GMT (854kb)
+[v2] Tue, 30 Jun 2015 18:16:43 GMT (319kb,D)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

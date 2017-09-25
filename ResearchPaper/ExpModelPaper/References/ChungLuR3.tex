@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{color}
+%\usepackage{soul}
+
+
+\title{Why Chung-Lu model fails for scale-free network with $\gamma<3$}
+\begin{document}
+\maketitle
+
+\section{Chung-Lu model}
+\paragraph{}
+For a given degree sequence $D=\{d_1, d_2, ...,d_N\}$ where $d_{max}^2 < \sum_{i=1}^N d_i$, each potential edge between vertex $i$ and $j$ is chosen with probability $p_{ij}=\frac{d_i d_j}{\sum_{k=1}^N d_k}$ and is independent of other edges.\cite{ChungLu}
+
+\section{scale-free network}
+\paragraph{}
+For scale-free network, the probability of a node having degree $k$ is $P(k)=\frac{k^{-\gamma}}{H_{N-1,\gamma}}$, where $H_{a,b}$ is the $a^{th}$ generalized harmonic number of exponent $b$, $H_{a,b}=\sum_{t=1}^a t^{-b}$.
+\paragraph{}
+When $N>>1$ and $\gamma > 1$
+\begin{equation}
+H_{N-1,\gamma}=\sum_{t=1}^{N-1}t^{-\gamma} \approx \int_{1}^{N} t^{-\gamma} dt = \frac{N^{1-\gamma}-1^{1-\gamma}}{1-\gamma} \approx \frac{1}{\gamma-1}
+\end{equation}
+is a constant.
+
+\section{expected maximum degree}
+The expected maximum degree of a scale free sequence is \cite{ScaleFreeSparse}
+\begin{equation}
+\hat{d}=max\{x: N\sum_{k=x}^{N-1}\frac{k^{-\gamma}}{H_{N-1,\gamma}} \geq 1\}
+\end{equation}
+When $N>>1$ and $\gamma>1$
+\begin{equation}
+N\int_{k=x}^{N-1}\frac{k^{-\gamma}}{H_{N-1,\gamma}} dk =1
+\end{equation}
+\begin{equation}
+\frac{N}{(1-\gamma)H_{N-1,\gamma}}[(N-1)^{1-\gamma}-x^{1-\gamma}]=1
+\end{equation}
+\begin{equation}
+x=[\frac{N}{(1-\gamma)H_{N-1,\gamma}}]^{\frac{1}{\gamma-1}} \sim N^{\frac{1}{\gamma-1}}
+\end{equation}
+
+\section{expected average degree}
+The expected average degree is
+\begin{equation}
+\bar{d}=\sum_{k=1}^{N-1} k P(k) =\sum_{k=1}^{N-1} k \frac{k^{-\gamma}}{H_{N-1,\gamma}}=\frac{\sum_{k=1}^{N-1}k^{-(\gamma-1)}}{H_{N-1,\gamma}}=\frac{H_{N-1,\gamma-1}}{H_{N-1,\gamma}}
+\end{equation}
+When $N>>1$ and $\gamma>2$,
+\begin{equation}
+\bar{d}\approx \frac{\gamma-1}{\gamma-2}
+\end{equation}
+is a constant.
+
+\section{expected summation of degree}
+When $N>>1$ and $\gamma>2$,
+\begin{equation}
+\sum_{i=1} d_i = N \bar{d} \approx N \frac{\gamma-1}{\gamma-2} \sim N
+\end{equation}
+
+\section{Chung-Lu condition for scale-free sequence}
+\paragraph{}
+Chung-Lu model requires $d_{max}^2 < \sum_{i=1}^N d_i$. 
+\paragraph{}
+Since when $N>>1$ and $\gamma>2$, we have $\hat{d} \sim N^{ \frac{1}{\gamma-1}}$, $\sum_{i=1}^{N} d_i \sim N$, Chung-Lu model requires
+\begin{equation}
+N^{\frac{2}{\gamma-1}} < N
+\end{equation}
+which is true only when $\gamma > 3$.
+
+\paragraph{}
+This is why Chung-Lu model cannot work when $\gamma<3$.
+
+
+
+\begin{thebibliography}{9}
+\bibitem{ChungLu} 
+Fan Chung and Linyuan Lu,
+\textit{Complex Graphs and Networks}. Page 97.
+ 
+\bibitem{ScaleFreeSparse}
+Charo I. Del Genio, Thilo Gross, and Kevin E. Bassler
+\textit{All scale-free networks are sparse}
+\end{thebibliography}
+ 
+\end{document}
+

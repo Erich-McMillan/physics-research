@@ -1,0 +1,18 @@
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+g
+sum(count_triangles(g))
+sum(count_triangles(g))/3
+transitivity(g)
+ztrian=sum(count_triangles(g))/3
+ztripl=sum(degree(g)*(degree(g)-1))/2
+ztripl
+ztrian/ztripl
+ztrian/ztripl*3
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+source('~/Desktop/Erich_MCMC_Vs_ChungLu/N316regular/ConfigurationModel_Vs_ChungLu.R', chdir = TRUE)
+1:10
+q()

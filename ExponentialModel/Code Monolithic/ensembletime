@@ -1,0 +1,9 @@
+x316 -2 1000 powersave
+real	494m31.101s
+user	494m3.222s
+sys	0m25.082s
+
+x316 -2 1000 performance
+real	494m41.257s
+user	494m14.587s
+sys	0m22.773s
